@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-public class MatchingController extends BaseController{
+public class MatchingController{
 
     @Autowired
     private SegmentService segmentService;
