@@ -2,7 +2,6 @@ package com.matching.segmentsmatching.controllers;
 
 import com.matching.segmentsmatching.resources.MatchingResult;
 import com.matching.segmentsmatching.resources.RequestedRoute;
-import com.matching.segmentsmatching.services.SegmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

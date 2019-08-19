@@ -39,7 +39,7 @@ public class RestResponseEntityExceptionHandler
         return handleExceptionInternal(ex, null, headers, status, request);
     }
     */
-    
+
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {

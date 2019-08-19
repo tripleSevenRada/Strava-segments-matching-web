@@ -1,10 +1,17 @@
 package com.matching.segmentsmatching.resources;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
 public class Box {
 
+    @Min(-90) @Max(90)
     private double latS;
+    @Min(-90) @Max(90)
     private double latN;
+    @Min(-180) @Max(180)
     private double lonW;
+    @Min(-180) @Max(180)
     private double lonE;
 
     public Box(double latS, double latN, double lonW, double lonE) {
