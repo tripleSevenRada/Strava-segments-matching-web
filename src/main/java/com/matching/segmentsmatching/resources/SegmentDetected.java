@@ -1,11 +1,20 @@
 package com.matching.segmentsmatching.resources;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+
 public class SegmentDetected {
 
+    @NotBlank(message = "name must not be blank")
     private String name;
+    @Min(-90) @Max(90)
     private double latStart;
+    @Min(-180) @Max(180)
     private double lonStart;
+    @Min(-90) @Max(90)
     private double latFinish;
+    @Min(-180) @Max(180)
     private double lonFinish;
 
     public SegmentDetected(String name, double latStart, double lonStart, double latFinish, double lonFinish) {

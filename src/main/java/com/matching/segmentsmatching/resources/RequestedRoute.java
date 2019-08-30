@@ -12,13 +12,13 @@ public class RequestedRoute {
 
     @NotEmpty(message = "locations must not be empty")
     @Size(max = 100000, message = "locations size must be less or equal than 100000")
-    private List<Location> locations;
+    private List<LatLonPair> locations;
     private ActivityType type;
     @NotBlank(message = "token must not be blank")
-    @Size(min = 40, max = 40, message = "token size must be 40") // TODO
+    @Size(min = 40, max = 40, message = "token size must be 40")
     private String token;
 
-    public RequestedRoute(List<Location> locations, ActivityType type, String token) {
+    public RequestedRoute(List<LatLonPair> locations, ActivityType type, String token) {
         this.locations = locations;
         this.token = token;
         this.type = type;
@@ -29,7 +29,7 @@ public class RequestedRoute {
 
     public RequestedRoute(){}
 
-    public void setLocations(List<Location> locations) {
+    public void setLocations(List<LatLonPair> locations) {
         this.locations = locations;
     }
     public void setType(ActivityType type) { this.type = type; }
@@ -37,7 +37,7 @@ public class RequestedRoute {
         this.token = token;
     }
 
-    public List<Location> getLocations() {
+    public List<LatLonPair> getLocations() {
         return locations;
     }
     public ActivityType getType() { return type; }

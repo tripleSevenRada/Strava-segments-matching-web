@@ -2,6 +2,9 @@ package com.matching.segmentsmatching.controllers;
 
 import com.matching.segmentsmatching.resources.MatchingResult;
 import com.matching.segmentsmatching.resources.RequestedRoute;
+import com.matching.segmentsmatching.services.SegmentService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +21,7 @@ public class MatchingController{
 
     @RequestMapping(value = "/match", method = RequestMethod.POST)
     public MatchingResult match(@Valid @RequestBody(required = true) RequestedRoute requestedRoute) {
+
         String token = requestedRoute.getToken();
         // TODO
         return new MatchingResult();
