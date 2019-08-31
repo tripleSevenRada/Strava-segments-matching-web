@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
 public class GetSegmentsTests {
 
     private static final Logger LOG = LoggerFactory.getLogger(GetSegmentsTests.class);
-    private final String tokenValid = "mock";
+    private final String tokenValid = "b0d77cdd6000365506e7149b77283eb064f36982";
     private final String tokenInvalid = "12er34";
 
     @Autowired

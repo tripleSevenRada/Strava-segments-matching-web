@@ -1,11 +1,12 @@
 package com.matching.segmentsmatching.controllers;
 
+import com.matching.segmentsmatching.exceptions.MatchingValidityException;
 import com.matching.segmentsmatching.resources.*;
+import com.matching.segmentsmatching.services.DiscretizingService;
 import com.matching.segmentsmatching.services.MatchingService;
 import com.matching.segmentsmatching.services.SegmentService;
 import com.matching.segmentsmatching.services.XMLNomiResponseParser;
-import dataClasses.Box;
-import dataClasses.Location;
+import geospatial.Route;
 import geospatial.Segment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -27,9 +27,12 @@ public class MatchingController {
 
     @Autowired
     private SegmentService segmentService;
-
     @Autowired
     private MatchingService matchingService;
+    @Autowired
+    private DiscretizingService discretizingService;
+
+    private boolean verbose = true;
 
     @RequestMapping(value = "/match", method = RequestMethod.POST)
     public MatchingResult match(@Valid @RequestBody(required = true) RequestedRoute requestedRoute) {
@@ -37,65 +40,52 @@ public class MatchingController {
         String token = requestedRoute.getToken();
         ActivityType type = requestedRoute.getType();
 
-        //build a mock segment to use its computeBox function
-        List<Location> locationsToBuildSegmentMock = getDeepCopyLoc(requestedRoute);
-        Box box = null;
+        LatLonBox latLonBox = null;
         try {
-            Segment segment = new Segment(locationsToBuildSegmentMock);
-            box = segment.getBox();
-        } catch (RuntimeException re) {
-            //TODO throw, handle in @ControllerAdvice
-        }
+            latLonBox = matchingService.getBox(requestedRoute);
+        } catch (RuntimeException re) { throwMVE(re.getMessage(),1); }
+        if(latLonBox == null)throwMVE("null",2);
         String segmentsRaw = null;
-        if (box instanceof dataClasses.Valid) {
-            LatLonBox latLonBox = new LatLonBox(
-                    ((dataClasses.Valid) box).getMaxLat(),
-                    ((dataClasses.Valid) box).getMinLat(),
-                    ((dataClasses.Valid) box).getMinLon(),
-                    ((dataClasses.Valid) box).getMaxLon());
-            try {
-                segmentsRaw = segmentService.getSegments(latLonBox, type, token);
-            } catch (ConstraintViolationException cve) {
-                //TODO throw, handle in @ControllerAdvice
-            } catch (Exception e) {
-                //TODO throw, handle in @ControllerAdvice
-            }
-            if (segmentsRaw == null) {
-                //TODO throw, handle in @ControllerAdvice
-            }
-            List<SegmentParsed> segments = null;
-            try {
-                XMLNomiResponseParser parser = new XMLNomiResponseParser();
-                segments = parser.parseXMLNomiResponse(segmentsRaw);
-            } catch (Exception e) {
-                //TODO throw, handle in @ControllerAdvice
-            }
-            if (segments == null) {
-                //TODO throw, handle in @ControllerAdvice
-            }
-
-            LOG.info("on LatLonBox: " + latLonBox.toString());
-            LOG.info("segments.size(): " + segments.size());
-            segments.forEach(s -> LOG.info(s.toString()));
-
-
-
-
-
-
-        } else {
-            //TODO throw, handle in @ControllerAdvice
+        try {
+            segmentsRaw = segmentService.getSegments(latLonBox, type, token);
+        } catch (ConstraintViolationException cve) {
+            throwMVE(cve.getMessage(), 3);
+        } catch (Exception e) {
+            throwMVE(e.getMessage(),4);
         }
+        if (segmentsRaw == null) throwMVE("null",5);
+        List<SegmentParsed> segments = null;
+        try {
+            XMLNomiResponseParser parser = new XMLNomiResponseParser();
+            segments = parser.parseXMLNomiResponse(segmentsRaw);
+        } catch (Exception e) {
+            throwMVE(e.getMessage(), 6);
+        }
+        if (segments == null) throwMVE("null",7);
 
-        // TODO
+        if (verbose) LOG.info("LatLonBox: " + latLonBox.toString());
+        if (verbose) segments.forEach(s -> LOG.info(s.toString()));
+        List<Segment> inputSegmentsForDiscretization = discretizingService.copySegments(segments);
+
+        // discretizedSegments
+        List<Segment> discretizedSegments = discretizingService
+                .segmentsDiscretizeParallel(inputSegmentsForDiscretization);
+
+        if(verbose) discretizedSegments.forEach(s -> LOG.info(s.toString()));
+        Route inputRouteForDiscretization =
+                discretizingService.copyRoute(requestedRoute);
+        LOG.info("input: " + inputRouteForDiscretization.toString());
+
+        // discretizedRoute
+        Route discretizedRoute =
+                discretizingService.routeDiscretizeParallel(inputRouteForDiscretization);
+
+        LOG.info("discretized: " + discretizedRoute.toString());
+
         return new MatchingResult();
     }
 
-    private List<Location> getDeepCopyLoc(RequestedRoute requestedRoute) {
-        List<Location> copy = new ArrayList<>();
-        requestedRoute.getLocations()
-                .forEach(l -> copy.add(new Location(l.getLat(), l.getLon())));
-        return copy;
+    private void throwMVE(String message, long id){
+        throw new MatchingValidityException(message + " " + id);
     }
-
 }

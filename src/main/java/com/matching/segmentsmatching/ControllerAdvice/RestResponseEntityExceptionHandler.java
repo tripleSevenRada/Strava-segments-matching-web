@@ -1,6 +1,8 @@
 package com.matching.segmentsmatching.ControllerAdvice;
 
+import com.matching.segmentsmatching.exceptions.MatchingValidityException;
 import com.matching.segmentsmatching.rest.Errors;
+import com.matching.segmentsmatching.rest.JustMessage;
 import com.matching.segmentsmatching.rest.ValidationError;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -8,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
@@ -52,5 +55,10 @@ public class RestResponseEntityExceptionHandler
         }).collect(Collectors.toList());
         errors.setErrors(errorList);
         return ResponseEntity.badRequest().body(errors);
+    }
+    @ExceptionHandler(MatchingValidityException.class)
+    protected ResponseEntity<Object> handleMatchingValidityException(MatchingValidityException mve){
+        JustMessage message = new JustMessage(mve.getMessage());
+        return ResponseEntity.badRequest().body(message);
     }
 }
