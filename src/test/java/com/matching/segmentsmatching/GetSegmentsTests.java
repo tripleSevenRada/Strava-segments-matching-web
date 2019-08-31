@@ -1,7 +1,7 @@
 package com.matching.segmentsmatching;
 
 import com.matching.segmentsmatching.resources.ActivityType;
-import com.matching.segmentsmatching.resources.Box;
+import com.matching.segmentsmatching.resources.LatLonBox;
 import com.matching.segmentsmatching.resources.LatLonPair;
 import com.matching.segmentsmatching.resources.SegmentParsed;
 import com.matching.segmentsmatching.services.SegmentService;
@@ -18,7 +18,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.management.modelmbean.XMLParseException;
 import javax.validation.ConstraintViolationException;
-import java.net.UnknownHostException;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -36,7 +35,7 @@ public class GetSegmentsTests {
 
     //@Test
     public void printSegmentsAsSeparateListsOfLocations() {
-        Box box = new Box(50.025, 49.999, 14.01, 14.288);
+        LatLonBox box = new LatLonBox(50.025, 49.999, 14.01, 14.288);
         try {
             String segments = service.getSegments(box, ActivityType.RIDE, tokenValid);
             XMLNomiResponseParser parser = new XMLNomiResponseParser();
@@ -206,7 +205,7 @@ public class GetSegmentsTests {
 
     @Test(expected = ConstraintViolationException.class)
     public void testResponseInvalidBox() throws Exception {
-        Box invalidBox = new Box(190, 190, 190, 190);
+        LatLonBox invalidBox = new LatLonBox(190, 190, 190, 190);
         String rawResponse = service.getSegments(invalidBox, ActivityType.RIDE, tokenValid);
     }
 
@@ -219,7 +218,7 @@ public class GetSegmentsTests {
         boolean[] B = new boolean[]{false, true, true, true};
         for (int i = 0; i < 4; i++) {
             try {
-                Box invalidBox = new Box(N[i], S[i], W[i], E[i]);
+                LatLonBox invalidBox = new LatLonBox(N[i], S[i], W[i], E[i]);
                 String rawResponse = service.getSegments(invalidBox, ActivityType.RIDE, tokenValid);
             } catch (Exception e) {
                 if (e instanceof ConstraintViolationException) {
@@ -239,13 +238,13 @@ public class GetSegmentsTests {
 
     @Test(expected = WebClientException.class)
     public void testResponseInvalidToken() throws Exception {
-        Box validBox = new Box(50.00, 50.03, 14.00, 14.03);
+        LatLonBox validBox = new LatLonBox(50.00, 50.03, 14.00, 14.03);
         String rawResponse = service.getSegments (validBox, ActivityType.RIDE, tokenInvalid);
     }
 
     @Test
     public void testPrintWebClientException() throws Exception{
-        Box validBox = new Box(50.00, 50.03, 14.00, 14.03);
+        LatLonBox validBox = new LatLonBox(50.00, 50.03, 14.00, 14.03);
         try {
             String rawResponse = service.getSegments(validBox, ActivityType.RIDE, tokenInvalid);
         } catch (WebClientException e) {

@@ -25,4 +25,9 @@ public class SegmentParsed {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString(){
+        return this.getClass().getSimpleName() + ", name: " + name + ", locations.size(): " + locations.size();
+    }
 }

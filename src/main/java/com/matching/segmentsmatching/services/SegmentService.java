@@ -1,7 +1,7 @@
 package com.matching.segmentsmatching.services;
 
 import com.matching.segmentsmatching.resources.ActivityType;
-import com.matching.segmentsmatching.resources.Box;
+import com.matching.segmentsmatching.resources.LatLonBox;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -18,7 +18,7 @@ public class SegmentService {
 
     // https://www.baeldung.com/spring-5-webclient
 
-    public String getSegments(@Valid Box box, ActivityType type, String token)
+    public String getSegments(@Valid LatLonBox box, ActivityType type, String token)
             throws ConstraintViolationException, WebClientException {
         String decimalFormat = "%.4f";
 
