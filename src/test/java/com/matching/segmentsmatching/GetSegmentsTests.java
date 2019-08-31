@@ -1,6 +1,9 @@
 package com.matching.segmentsmatching;
 
-import com.matching.segmentsmatching.resources.*;
+import com.matching.segmentsmatching.resources.ActivityType;
+import com.matching.segmentsmatching.resources.Box;
+import com.matching.segmentsmatching.resources.LatLonPair;
+import com.matching.segmentsmatching.resources.SegmentParsed;
 import com.matching.segmentsmatching.services.SegmentService;
 import com.matching.segmentsmatching.services.XMLNomiResponseParser;
 import org.junit.Test;
@@ -15,9 +18,10 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.management.modelmbean.XMLParseException;
 import javax.validation.ConstraintViolationException;
+import java.net.UnknownHostException;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -32,11 +36,7 @@ public class GetSegmentsTests {
 
     //@Test
     public void printSegmentsAsSeparateListsOfLocations() {
-        Box box = new Box();
-        box.setLatN(50.025);
-        box.setLatS(49.999);
-        box.setLonW(14.01);
-        box.setLonE(14.288);
+        Box box = new Box(50.025, 49.999, 14.01, 14.288);
         try {
             String segments = service.getSegments(box, ActivityType.RIDE, tokenValid);
             XMLNomiResponseParser parser = new XMLNomiResponseParser();
@@ -205,17 +205,46 @@ public class GetSegmentsTests {
     }
 
     @Test(expected = ConstraintViolationException.class)
-    public void testResponseInvalidBox() {
+    public void testResponseInvalidBox() throws Exception {
         Box invalidBox = new Box(190, 190, 190, 190);
         String rawResponse = service.getSegments(invalidBox, ActivityType.RIDE, tokenValid);
     }
-    @Test(expected = WebClientException.class)
-    public void testResponseInvalidToken() {
-        Box validBox = new Box(50.00, 50.03, 14.00, 14.03);
-        String rawResponse = service.getSegments(validBox, ActivityType.RIDE, tokenInvalid);
-    }
+
     @Test
-    public void testPrintWebClientException() {
+    public void testResponseInvalidLargeBox() {
+        double[] N = new double[]{10.0, 15.0, 10.0, 15.0};
+        double[] S = new double[]{8.0, 10.0, 10.0, 10.0};
+        double[] W = new double[]{9.0, 10.0, 10.0, 10.0};
+        double[] E = new double[]{11.0, 10.0, 15.0, 15.0};
+        boolean[] B = new boolean[]{false, true, true, true};
+        for (int i = 0; i < 4; i++) {
+            try {
+                Box invalidBox = new Box(N[i], S[i], W[i], E[i]);
+                String rawResponse = service.getSegments(invalidBox, ActivityType.RIDE, tokenValid);
+            } catch (Exception e) {
+                if (e instanceof ConstraintViolationException) {
+                    LOG.error("CONSTRAINT");
+                    LOG.error(e.getMessage());
+                    LOG.error(e.toString());
+                    assert (B[i]);
+                } else {
+                    LOG.error("ELSE");
+                    LOG.error(e.getMessage());
+                    LOG.error(e.getClass().getTypeName());
+                    assertFalse(B[i]);
+                }
+            }
+        }
+    }
+
+    @Test(expected = WebClientException.class)
+    public void testResponseInvalidToken() throws Exception {
+        Box validBox = new Box(50.00, 50.03, 14.00, 14.03);
+        String rawResponse = service.getSegments (validBox, ActivityType.RIDE, tokenInvalid);
+    }
+
+    @Test
+    public void testPrintWebClientException() throws Exception{
         Box validBox = new Box(50.00, 50.03, 14.00, 14.03);
         try {
             String rawResponse = service.getSegments(validBox, ActivityType.RIDE, tokenInvalid);

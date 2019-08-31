@@ -2,6 +2,7 @@ package com.matching.segmentsmatching.controllers;
 
 import com.matching.segmentsmatching.resources.MatchingResult;
 import com.matching.segmentsmatching.resources.RequestedRoute;
+import com.matching.segmentsmatching.services.MatchingService;
 import com.matching.segmentsmatching.services.SegmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,9 @@ public class MatchingController{
 
     @Autowired
     private SegmentService segmentService;
+
+    @Autowired
+    private MatchingService matchingService;
 
     @RequestMapping(value = "/match", method = RequestMethod.POST)
     public MatchingResult match(@Valid @RequestBody(required = true) RequestedRoute requestedRoute) {
