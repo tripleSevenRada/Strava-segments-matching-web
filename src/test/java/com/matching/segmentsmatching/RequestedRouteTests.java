@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matching.segmentsmatching.resources.ActivityType;
 import com.matching.segmentsmatching.resources.LatLonPair;
+import com.matching.segmentsmatching.resources.MatchingScenario;
 import com.matching.segmentsmatching.resources.RequestedRoute;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -143,7 +144,7 @@ public class RequestedRouteTests {
         for (int i = 0; i < tokens.length; i++) {
             setUpMvc();
             Setup setup = getSetup(i);
-            RequestedRoute r = new RequestedRoute(setup.locations, ActivityType.RIDE, setup.token);
+            RequestedRoute r = new RequestedRoute(setup.locations, ActivityType.RIDE, MatchingScenario.ROUTE, setup.token);
             String inputJson = mapToJson(r);
             MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                     .contentType(setup.mediaType).content(inputJson)).andReturn();

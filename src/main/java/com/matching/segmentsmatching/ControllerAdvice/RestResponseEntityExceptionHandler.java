@@ -11,6 +11,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
@@ -60,5 +62,15 @@ public class RestResponseEntityExceptionHandler
     protected ResponseEntity<Object> handleMatchingValidityException(MatchingValidityException mve){
         JustMessage message = new JustMessage(mve.getMessage());
         return ResponseEntity.badRequest().body(message);
+    }
+    @ExceptionHandler(HttpClientErrorException.class)
+    protected ResponseEntity<Object> handleHttpClientErrorException(HttpClientErrorException hcee) {
+        JustMessage message = new JustMessage(hcee.getMessage());
+        return ResponseEntity.status(hcee.getStatusCode()).body(message);
+    }
+    @ExceptionHandler(HttpServerErrorException.class)
+    protected ResponseEntity<Object> handleHttpServerErrorException(HttpServerErrorException hsee) {
+        JustMessage message = new JustMessage(hsee.getMessage());
+        return ResponseEntity.status(hsee.getStatusCode()).body(message);
     }
 }

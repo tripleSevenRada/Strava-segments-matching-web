@@ -14,4 +14,9 @@ public class MatchingResult {
     public void add(SegmentDetected segmentDetected){
         segmentDetectedList.add(segmentDetected);
     }
+
+    @Override
+    public String toString(){
+        return this.getClass().getSimpleName() + " segments detected: " + segmentDetectedList.size();
+    }
 }

@@ -57,4 +57,14 @@ public class SegmentDetected {
 
     public void setLonFinish(double lonFinish) { this.lonFinish = lonFinish; }
 
+    @Override
+    public String toString() {
+        return "SegmentDetected{" +
+                "name='" + name + '\'' +
+                ", latStart=" + latStart +
+                ", lonStart=" + lonStart +
+                ", latFinish=" + latFinish +
+                ", lonFinish=" + lonFinish +
+                '}';
+    }
 }

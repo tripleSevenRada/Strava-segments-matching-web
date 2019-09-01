@@ -18,14 +18,20 @@ public class RequestedRoute {
     private List<LatLonPair> locations;
     @NonNull
     private ActivityType type;
+    @NonNull
+    private MatchingScenario matchingScenario;
     @NotBlank(message = "token must not be blank")
     @Size(min = 40, max = 40, message = "token size must be 40")
     private String token;
 
-    public RequestedRoute(List<LatLonPair> locations, ActivityType type, String token) {
+    public RequestedRoute(List<LatLonPair> locations,
+                          ActivityType type,
+                          MatchingScenario matchingScenario,
+                          String token) {
         this.locations = locations;
-        this.token = token;
         this.type = type;
+        this.matchingScenario = matchingScenario;
+        this.token = token;
     }
 
     // in web service
@@ -33,14 +39,15 @@ public class RequestedRoute {
 
     public RequestedRoute(){}
 
-    // public void setLocations(List<LatLonPair> locations) { this.locations = locations; }
-    // public void setType(ActivityType type) { this.type = type; }
-    // public void setToken(String token) { this.token = token; }
+    public void setLocations(List<LatLonPair> locations) { this.locations = locations; }
+    public void setType(ActivityType type) { this.type = type; }
+    public void setMatchingScenario(MatchingScenario matchingScenario) { this.matchingScenario = matchingScenario; }
+    public void setToken(String token) { this.token = token; }
 
     public List<LatLonPair> getLocations() {
         return locations;
     }
     public ActivityType getType() { return type; }
+    public MatchingScenario getMatchingScenario() { return matchingScenario; }
     public String getToken(){ return token; }
-
 }

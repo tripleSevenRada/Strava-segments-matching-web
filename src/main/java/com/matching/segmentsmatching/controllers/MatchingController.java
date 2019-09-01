@@ -11,10 +11,13 @@ import geospatial.Segment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 
 import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
@@ -44,27 +47,36 @@ public class MatchingController {
         try {
             latLonBox = matchingService.getBox(requestedRoute);
         } catch (RuntimeException re) { throwMVE(re.getMessage(),1); }
-        if(latLonBox == null)throwMVE("null",2);
+        if(latLonBox == null)
+            throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR); // should never happen
         String segmentsRaw = null;
         try {
             segmentsRaw = segmentService.getSegments(latLonBox, type, token);
         } catch (ConstraintViolationException cve) {
-            throwMVE(cve.getMessage(), 3);
+            throwMVE(cve.getMessage(), 2);
         } catch (Exception e) {
-            throwMVE(e.getMessage(),4);
+            throw new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        if (segmentsRaw == null) throwMVE("null",5);
+        if (segmentsRaw == null)
+            throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR); // should never happen
         List<SegmentParsed> segments = null;
         try {
             XMLNomiResponseParser parser = new XMLNomiResponseParser();
             segments = parser.parseXMLNomiResponse(segmentsRaw);
         } catch (Exception e) {
-            throwMVE(e.getMessage(), 6);
+            throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        if (segments == null) throwMVE("null",7);
+        if (segments == null)
+            throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR); // should never happen
 
-        if (verbose) LOG.info("LatLonBox: " + latLonBox.toString());
-        if (verbose) segments.forEach(s -> LOG.info(s.toString()));
+        // In case we have found no segments in the above specified box:
+        // Short circuit this controller and return empty result with OK status
+        if(segments.isEmpty()) return new MatchingResult();
+
+        if (verbose) {
+            LOG.info("LatLonBox: " + latLonBox.toString());
+            segments.forEach(s -> LOG.info(s.toString()));
+        }
         List<Segment> inputSegmentsForDiscretization = discretizingService.copySegments(segments);
 
         // discretizedSegments
@@ -82,7 +94,22 @@ public class MatchingController {
 
         LOG.info("discretized: " + discretizedRoute.toString());
 
-        return new MatchingResult();
+        MatchingResult result;
+        try {
+            result = matchingService.getMatchingResult(discretizedRoute,
+                    discretizedSegments, requestedRoute.getMatchingScenario());
+        } catch (Exception e) {
+            throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        if (result == null) throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
+
+        LOG.info(result.toString());
+        if(verbose){
+            result.getSegmentDetectedList().forEach( detected ->
+                    LOG.info(detected.toString())
+            );
+        }
+        return result;
     }
 
     private void throwMVE(String message, long id){

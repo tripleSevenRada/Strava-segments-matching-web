@@ -14,13 +14,15 @@ import java.util.List;
 @Service
 public class DiscretizingService {
 
+    private final double discretizeDistance = 3.0;
+
     public List<Segment> segmentsDiscretizeParallel(List<Segment> inputSegments) {
         List<Segment> outputSegments = new ArrayList<>();
         inputSegments.forEach(discretizable ->
                 {
                     DiscretizerWrapper wrapper = new DiscretizerWrapper();
                     outputSegments.add(
-                            new Segment(wrapper.discretizeParallel(discretizable, 3.0),
+                            new Segment(wrapper.discretizeParallel(discretizable, discretizeDistance),
                                     discretizable.getName()));
                 }
         );
@@ -29,7 +31,7 @@ public class DiscretizingService {
 
     public Route routeDiscretizeParallel(Route inputRoute) {
         DiscretizerWrapper wrapper = new DiscretizerWrapper();
-        return new Route(wrapper.discretizeParallel(inputRoute, 3.0));
+        return new Route(wrapper.discretizeParallel(inputRoute, discretizeDistance));
     }
 
     public List<Segment> copySegments(List<SegmentParsed> input) {
