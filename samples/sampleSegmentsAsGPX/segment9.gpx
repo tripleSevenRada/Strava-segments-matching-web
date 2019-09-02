@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Map, Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+	<metadata>
+		<desc>File with points/tracks from Locus Map/3.39.4</desc>
+	</metadata>
+<trk>
+<name>Segment</name>
+<trkseg>
+<trkpt lat="50.00211" lon="14.002820000000002">
+</trkpt>
+<trkpt lat="50.002230000000004" lon="14.002860000000002">
+</trkpt>
+<trkpt lat="50.00235000000001" lon="14.002890000000003">
+</trkpt>
+<trkpt lat="50.00255000000001" lon="14.002840000000003">
+</trkpt>
+<trkpt lat="50.00258000000001" lon="14.002890000000003">
+</trkpt>
+<trkpt lat="50.00258000000001" lon="14.002930000000003">
+</trkpt>
+<trkpt lat="50.00285000000001" lon="14.003250000000003">
+</trkpt>
+<trkpt lat="50.002750000000006" lon="14.003230000000004">
+</trkpt>
+<trkpt lat="50.00269000000001" lon="14.003160000000005">
+</trkpt>
+<trkpt lat="50.00265000000001" lon="14.003140000000005">
+</trkpt>
+<trkpt lat="50.00260000000001" lon="14.003190000000005">
+</trkpt>
+<trkpt lat="50.002390000000005" lon="14.004300000000006">
+</trkpt>
+<trkpt lat="50.00226000000001" lon="14.004880000000005">
+</trkpt>
+<trkpt lat="50.00227000000001" lon="14.004840000000005">
+</trkpt>
+<trkpt lat="50.00231000000001" lon="14.004840000000005">
+</trkpt>
+<trkpt lat="50.002480000000006" lon="14.004900000000005">
+</trkpt>
+<trkpt lat="50.00274" lon="14.005100000000004">
+</trkpt>
+<trkpt lat="50.00292" lon="14.005250000000004">
+</trkpt>
+<trkpt lat="50.003150000000005" lon="14.005370000000005">
+</trkpt>
+<trkpt lat="50.00318000000001" lon="14.005370000000005">
+</trkpt>
+<trkpt lat="50.00327000000001" lon="14.005440000000004">
+</trkpt>
+<trkpt lat="50.003550000000004" lon="14.005720000000004">
+</trkpt>
+<trkpt lat="50.00399" lon="14.006060000000003">
+</trkpt>
+<trkpt lat="50.004200000000004" lon="14.006190000000004">
+</trkpt>
+<trkpt lat="50.00446" lon="14.006320000000004">
+</trkpt>
+<trkpt lat="50.00472" lon="14.006580000000005">
+</trkpt>
+<trkpt lat="50.00492" lon="14.006920000000004">
+</trkpt>
+<trkpt lat="50.00502" lon="14.007050000000005">
+</trkpt>
+<trkpt lat="50.00515" lon="14.007130000000005">
+</trkpt>
+<trkpt lat="50.00527" lon="14.007260000000006">
+</trkpt>
+<trkpt lat="50.005370000000006" lon="14.007350000000006">
+</trkpt>
+<trkpt lat="50.005500000000005" lon="14.007520000000007">
+</trkpt>
+<trkpt lat="50.00554" lon="14.007540000000006">
+</trkpt>
+<trkpt lat="50.005630000000004" lon="14.007690000000006">
+</trkpt>
+<trkpt lat="50.00582000000001" lon="14.007890000000005">
+</trkpt>
+<trkpt lat="50.00592000000001" lon="14.008010000000006">
+</trkpt>
+<trkpt lat="50.00596000000001" lon="14.008040000000006">
+</trkpt>
+<trkpt lat="50.006040000000006" lon="14.008160000000007">
+</trkpt>
+<trkpt lat="50.006080000000004" lon="14.008210000000007">
+</trkpt>
+<trkpt lat="50.00638000000001" lon="14.008810000000008">
+</trkpt>
+<trkpt lat="50.00645000000001" lon="14.009040000000008">
+</trkpt>
+<trkpt lat="50.00646000000001" lon="14.009130000000008">
+</trkpt>
+<trkpt lat="50.00645000000001" lon="14.009300000000009">
+</trkpt>
+<trkpt lat="50.00670000000001" lon="14.010290000000008">
+</trkpt>
+<trkpt lat="50.00674000000001" lon="14.010350000000008">
+</trkpt>
+<trkpt lat="50.00681000000001" lon="14.010760000000008">
+</trkpt>
+<trkpt lat="50.006870000000006" lon="14.010980000000009">
+</trkpt>
+<trkpt lat="50.00708000000001" lon="14.01143000000001">
+</trkpt>
+<trkpt lat="50.00740000000001" lon="14.01185000000001">
+</trkpt>
+<trkpt lat="50.00751000000001" lon="14.01207000000001">
+</trkpt>
+<trkpt lat="50.00758000000001" lon="14.01226000000001">
+</trkpt>
+<trkpt lat="50.00760000000001" lon="14.01237000000001">
+</trkpt>
+<trkpt lat="50.00774000000001" lon="14.01263000000001">
+</trkpt>
+<trkpt lat="50.007770000000015" lon="14.01288000000001">
+</trkpt>
+<trkpt lat="50.00783000000001" lon="14.01293000000001">
+</trkpt>
+<trkpt lat="50.00794000000001" lon="14.01293000000001">
+</trkpt>
+<trkpt lat="50.00807000000001" lon="14.01282000000001">
+</trkpt>
+<trkpt lat="50.00834000000001" lon="14.01265000000001">
+</trkpt>
+<trkpt lat="50.00845000000001" lon="14.01265000000001">
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

@@ -61,10 +61,10 @@ public class SegmentDetected {
     public String toString() {
         return "SegmentDetected{" +
                 "name='" + name + '\'' +
-                ", latStart=" + latStart +
-                ", lonStart=" + lonStart +
-                ", latFinish=" + latFinish +
-                ", lonFinish=" + lonFinish +
+                ",latS=" + latStart +
+                ",lonS=" + lonStart +
+                ",latF=" + latFinish +
+                ",lonF=" + lonFinish +
                 '}';
     }
 }

@@ -22,9 +22,9 @@ public class MatchingService {
     private final Map<MatchingScenario, MatchingConfig> scenarioToConfig =
             new HashMap<MatchingScenario, MatchingConfig>() {
                 {
-                    put(MatchingScenario.ROUTE, new MatchingConfig(0.94, 10.0));
-                    put(MatchingScenario.RECORDED, new MatchingConfig(0.90, 16.0));
-                    put(MatchingScenario.LOOSE, new MatchingConfig(0.7, 32.0));
+                    put(MatchingScenario.ROUTE, new MatchingConfig(0.94, 14.0));
+                    put(MatchingScenario.RECORDED, new MatchingConfig(0.90, 18.0));
+                    put(MatchingScenario.LOOSE, new MatchingConfig(0.86, 24.0));
                 }
             };
 

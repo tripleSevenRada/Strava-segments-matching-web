@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Map, Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+	<metadata>
+		<desc>File with points/tracks from Locus Map/3.39.4</desc>
+	</metadata>
+<trk>
+<name>Nižbor BMX</name>
+<trkseg>
+<trkpt lat="50.00059" lon="14.001730000000002">
+</trkpt>
+<trkpt lat="50.000600000000006" lon="14.001080000000002">
+</trkpt>
+<trkpt lat="50.00059" lon="14.001030000000002">
+</trkpt>
+<trkpt lat="50.000620000000005" lon="14.000760000000001">
+</trkpt>
+<trkpt lat="50.00066" lon="14.000550000000002">
+</trkpt>
+<trkpt lat="50.000690000000006" lon="14.000450000000003">
+</trkpt>
+<trkpt lat="50.000750000000004" lon="14.000460000000002">
+</trkpt>
+<trkpt lat="50.00083" lon="14.000520000000002">
+</trkpt>
+<trkpt lat="50.00083" lon="14.000630000000001">
+</trkpt>
+<trkpt lat="50.00079" lon="14.001050000000001">
+</trkpt>
+<trkpt lat="50.00078" lon="14.001290000000001">
+</trkpt>
+<trkpt lat="50.00073" lon="14.001520000000001">
+</trkpt>
+<trkpt lat="50.000719999999994" lon="14.00167">
+</trkpt>
+<trkpt lat="50.00073" lon="14.00176">
+</trkpt>
+<trkpt lat="50.000769999999996" lon="14.001740000000002">
+</trkpt>
+<trkpt lat="50.00082999999999" lon="14.001610000000001">
+</trkpt>
+<trkpt lat="50.00082999999999" lon="14.00139">
+</trkpt>
+<trkpt lat="50.00084999999999" lon="14.00131">
+</trkpt>
+<trkpt lat="50.000879999999995" lon="14.00107">
+</trkpt>
+<trkpt lat="50.00089" lon="14.00053">
+</trkpt>
+<trkpt lat="50.000949999999996" lon="14.00051">
+</trkpt>
+<trkpt lat="50.00102" lon="14.00059">
+</trkpt>
+<trkpt lat="50.00089" lon="14.0014">
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Map, Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+	<metadata>
+		<desc>File with points/tracks from Locus Map/3.39.4</desc>
+	</metadata>
+<trk>
+<name>Nižbor 2</name>
+<trkseg>
+<trkpt lat="50.00263" lon="14.00276">
+</trkpt>
+<trkpt lat="50.003150000000005" lon="14.00254">
+</trkpt>
+<trkpt lat="50.00359" lon="14.002419999999999">
+</trkpt>
+<trkpt lat="50.00387" lon="14.00221">
+</trkpt>
+<trkpt lat="50.00425" lon="14.00179">
+</trkpt>
+<trkpt lat="50.0045" lon="14.00155">
+</trkpt>
+<trkpt lat="50.00484" lon="14.00141">
+</trkpt>
+<trkpt lat="50.00508" lon="14.00134">
+</trkpt>
+<trkpt lat="50.00555" lon="14.000910000000001">
+</trkpt>
+<trkpt lat="50.0058" lon="14.00065">
+</trkpt>
+<trkpt lat="50.00621" lon="14.00036">
+</trkpt>
+<trkpt lat="50.00649" lon="14.00055">
+</trkpt>
+<trkpt lat="50.00679" lon="14.001290000000001">
+</trkpt>
+<trkpt lat="50.00697" lon="14.001550000000002">
+</trkpt>
+<trkpt lat="50.007200000000005" lon="14.001680000000002">
+</trkpt>
+<trkpt lat="50.007450000000006" lon="14.001660000000003">
+</trkpt>
+<trkpt lat="50.00829" lon="14.001430000000003">
+</trkpt>
+<trkpt lat="50.00976" lon="14.001110000000002">
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

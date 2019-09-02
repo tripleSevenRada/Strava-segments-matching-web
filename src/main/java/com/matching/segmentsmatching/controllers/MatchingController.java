@@ -2,10 +2,7 @@ package com.matching.segmentsmatching.controllers;
 
 import com.matching.segmentsmatching.exceptions.MatchingValidityException;
 import com.matching.segmentsmatching.resources.*;
-import com.matching.segmentsmatching.services.DiscretizingService;
-import com.matching.segmentsmatching.services.MatchingService;
-import com.matching.segmentsmatching.services.SegmentService;
-import com.matching.segmentsmatching.services.XMLNomiResponseParser;
+import com.matching.segmentsmatching.services.*;
 import geospatial.Route;
 import geospatial.Segment;
 import org.slf4j.Logger;
@@ -29,7 +26,7 @@ public class MatchingController {
     private static final Logger LOG = LoggerFactory.getLogger(MatchingController.class);
 
     @Autowired
-    private SegmentService segmentService;
+    private TestSegmentService segmentService; //SegmentService
     @Autowired
     private MatchingService matchingService;
     @Autowired

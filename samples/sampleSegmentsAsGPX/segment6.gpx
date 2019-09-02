@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Map, Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+	<metadata>
+		<desc>File with points/tracks from Locus Map/3.39.4</desc>
+	</metadata>
+<trk>
+<name>Nižbor Climb</name>
+<trkseg>
+<trkpt lat="50.00195" lon="14.00454">
+</trkpt>
+<trkpt lat="50.00201" lon="14.00421">
+</trkpt>
+<trkpt lat="50.00214" lon="14.00365">
+</trkpt>
+<trkpt lat="50.00241" lon="14.00291">
+</trkpt>
+<trkpt lat="50.002539999999996" lon="14.00281">
+</trkpt>
+<trkpt lat="50.00284" lon="14.00266">
+</trkpt>
+<trkpt lat="50.00324" lon="14.002500000000001">
+</trkpt>
+<trkpt lat="50.00337" lon="14.002490000000002">
+</trkpt>
+<trkpt lat="50.00356" lon="14.002430000000002">
+</trkpt>
+<trkpt lat="50.00386" lon="14.002270000000003">
+</trkpt>
+<trkpt lat="50.00401" lon="14.002140000000002">
+</trkpt>
+<trkpt lat="50.00414" lon="14.001990000000003">
+</trkpt>
+<trkpt lat="50.00435" lon="14.001660000000003">
+</trkpt>
+<trkpt lat="50.0045" lon="14.001500000000004">
+</trkpt>
+<trkpt lat="50.00486" lon="14.001410000000003">
+</trkpt>
+<trkpt lat="50.00502" lon="14.001400000000004">
+</trkpt>
+<trkpt lat="50.0051" lon="14.001380000000005">
+</trkpt>
+<trkpt lat="50.00528" lon="14.001280000000005">
+</trkpt>
+<trkpt lat="50.00539" lon="14.001160000000004">
+</trkpt>
+<trkpt lat="50.005469999999995" lon="14.001040000000003">
+</trkpt>
+<trkpt lat="50.005779999999994" lon="14.000660000000003">
+</trkpt>
+<trkpt lat="50.00583999999999" lon="14.000550000000004">
+</trkpt>
+<trkpt lat="50.00594999999999" lon="14.000440000000005">
+</trkpt>
+<trkpt lat="50.006069999999994" lon="14.000380000000005">
+</trkpt>
+<trkpt lat="50.006139999999995" lon="14.000360000000006">
+</trkpt>
+<trkpt lat="50.006229999999995" lon="14.000370000000006">
+</trkpt>
+<trkpt lat="50.00633" lon="14.000420000000005">
+</trkpt>
+<trkpt lat="50.00645" lon="14.000540000000006">
+</trkpt>
+<trkpt lat="50.00656" lon="14.000690000000006">
+</trkpt>
+<trkpt lat="50.00665" lon="14.000930000000006">
+</trkpt>
+<trkpt lat="50.00669" lon="14.001070000000006">
+</trkpt>
+<trkpt lat="50.00681" lon="14.001340000000006">
+</trkpt>
+<trkpt lat="50.00692" lon="14.001480000000006">
+</trkpt>
+<trkpt lat="50.007" lon="14.001550000000005">
+</trkpt>
+<trkpt lat="50.00718" lon="14.001620000000004">
+</trkpt>
+<trkpt lat="50.00763" lon="14.001540000000004">
+</trkpt>
+<trkpt lat="50.00773" lon="14.001500000000004">
+</trkpt>
+<trkpt lat="50.00784" lon="14.001500000000004">
+</trkpt>
+<trkpt lat="50.00791" lon="14.001460000000003">
+</trkpt>
+<trkpt lat="50.00866" lon="14.001350000000004">
+</trkpt>
+<trkpt lat="50.00926" lon="14.001200000000004">
+</trkpt>
+<trkpt lat="50.00994" lon="14.001080000000004">
+</trkpt>
+<trkpt lat="50.0101" lon="14.001020000000004">
+</trkpt>
+<trkpt lat="50.01021" lon="14.001000000000005">
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

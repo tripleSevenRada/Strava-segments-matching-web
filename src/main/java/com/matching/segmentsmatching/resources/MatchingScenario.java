@@ -1,7 +1,7 @@
 package com.matching.segmentsmatching.resources;
 
 public enum MatchingScenario {
-    // allow more "loose" matching for recorded tracks
+    // allow more "loose" matching for recorded tracks and for testing
     ROUTE("route"),
     RECORDED("recorded"),
     LOOSE("loose");
