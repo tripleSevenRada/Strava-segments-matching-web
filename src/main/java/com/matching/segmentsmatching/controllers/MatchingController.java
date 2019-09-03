@@ -90,15 +90,18 @@ public class MatchingController {
                 discretizingService.routeDiscretizeParallel(inputRouteForDiscretization);
 
         LOG.info("discretized: " + discretizedRoute.toString());
+        if (verbose) LOG.info("invoking matching service now");
 
         MatchingResult result;
         try {
-            result = matchingService.getMatchingResult(discretizedRoute,
+            result = matchingService.getMatchingResult(inputRouteForDiscretization, discretizedRoute,
                     discretizedSegments, requestedRoute.getMatchingScenario());
         } catch (Exception e) {
             throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
         }
         if (result == null) throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
+
+        if (verbose) LOG.info("matching service returned now");
 
         LOG.info(result.toString());
         if(verbose){

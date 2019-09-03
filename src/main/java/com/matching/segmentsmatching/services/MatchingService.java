@@ -48,6 +48,7 @@ public class MatchingService {
     }
 
     public MatchingResult getMatchingResult(
+            Route originalRoute,
             Route discretizedRoute,
             List<Segment> discretizedSegments,
             MatchingScenario matchingScenario) {
@@ -63,14 +64,17 @@ public class MatchingService {
                 List<LocationIndex> candidate = candidates.getCandidates().get(j);
                 MatcherWrapper wrapper = new MatcherWrapper();
                 if (wrapper.matchParallel(candidate, segment, config)) {
+                    //TODO start and finish indices in the original route
                     result.add(new SegmentDetected(
                             segment.getName(),
                             segment.getElements().get(0).getLat(),
                             segment.getElements().get(0).getLon(),
                             segment.getElements().get(segment.getElements().size() - 1).getLat(),
-                            segment.getElements().get(segment.getElements().size() - 1).getLon()
+                            segment.getElements().get(segment.getElements().size() - 1).getLon(),
+                            0,
+                            0
                     ));
-                    // if route goes in rounds (laps) then only first round is segment detected
+                    // if route goes in rounds (laps) then only on first round is the segment detected
                     break;
                 }
             }

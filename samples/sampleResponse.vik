@@ -1,10 +1,10 @@
 #VIKING GPS Data file http://viking.sf.net/
 FILE_VERSION=1
 
-xmpp=2,000000
-ympp=2,000000
-lat=50,019414
-lon=14,002187
+xmpp=0,250000
+ympp=0,250000
+lat=50,007433
+lon=14,001986
 mode=mercator
 color=#cccccc
 highlightcolor=#eea500
@@ -14,6 +14,7 @@ drawhighlight=t
 
 ~Layer Map
 name=Default Map
+visible=f
 mode=19
 directory=
 cache_type=1
@@ -40,6 +41,7 @@ mapzoom=0
 
 ~Layer Map
 name=Default Map
+visible=f
 mode=19
 directory=
 cache_type=1
@@ -97,7 +99,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="track" name="Nižbor 2" color=#2d870a visible="n"
+type="track" name="Nižbor 2" color=#2d870a
 type="trackpoint" latitude="50.002630000000003" longitude="14.00276" newsegment="yes"
 type="trackpoint" latitude="50.003150000000005" longitude="14.00254"
 type="trackpoint" latitude="50.003590000000003" longitude="14.002419999999999"
@@ -325,7 +327,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="track" name="Žlubinec, MTB krátký výjezd {" color=#2d870a
+type="track" name="Žlubinec, MTB krátký výjezd {" color=#2d870a visible="n"
 type="trackpoint" latitude="50.010490000000004" longitude="14.016090000000002" newsegment="yes"
 type="trackpoint" latitude="50.010180000000005" longitude="14.015800000000002"
 type="trackpoint" latitude="50.009860000000003" longitude="14.015440000000002"
@@ -402,7 +404,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="track" name="Nižbor Climb" color=#2d870a visible="n"
+type="track" name="Nižbor Climb" color=#2d870a
 type="trackpoint" latitude="50.001930000000002" longitude="14.004790000000002" newsegment="yes"
 type="trackpoint" latitude="50.00197" longitude="14.004480000000001"
 type="trackpoint" latitude="50.002130000000001" longitude="14.003740000000001"
@@ -596,7 +598,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="track" name="Výjezd na Žlubinec od chaty" color=#2d870a
+type="track" name="Výjezd na Žlubinec od chaty" color=#2d870a visible="n"
 type="trackpoint" latitude="50.009760000000007" longitude="14.015010000000002" newsegment="yes"
 type="trackpoint" latitude="50.009820000000005" longitude="14.014930000000001"
 type="trackpoint" latitude="50.009740000000008" longitude="14.014520000000001"
@@ -676,7 +678,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="track" name="UpToBurranosAires" color=#2d870a
+type="track" name="UpToBurranosAires" color=#2d870a visible="n"
 type="trackpoint" latitude="50.000600000000006" longitude="14.017330000000001" newsegment="yes"
 type="trackpoint" latitude="50.000440000000005" longitude="14.017430000000001"
 type="trackpoint" latitude="49.999910000000007" longitude="14.01768"
@@ -820,7 +822,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="track" name="Segment" color=#2d870a
+type="track" name="Segment" color=#2d870a visible="n"
 type="trackpoint" latitude="50.002110000000002" longitude="14.002820000000002" newsegment="yes"
 type="trackpoint" latitude="50.002230000000004" longitude="14.002860000000002"
 type="trackpoint" latitude="50.002350000000007" longitude="14.002890000000003"
@@ -886,7 +888,7 @@ type="trackend"
 
 
 ~Layer TrackWaypoint
-name=TrackWaypoint
+name=buranosAires
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -931,7 +933,7 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
-type="route" name="buranosAiresExpectMatch" color=#ff0000
+type="route" name="buranosAiresExpectMatch" color=#ff0000 visible="n"
 type="routepoint" latitude="49.995738983101262" longitude="13.998936538457876"
 type="routepoint" latitude="49.995738983101262" longitude="13.998936538457876"
 type="routepoint" latitude="49.995738983101262" longitude="14.00133979773522"
@@ -1033,7 +1035,7 @@ type="routepoint" latitude="50.037788675751507" longitude="14.069296245336538"
 type="routepoint" latitude="50.041316707813877" longitude="14.063974742650991"
 type="routepoint" latitude="50.046277564264813" longitude="14.06500471091271"
 type="routeend"
-type="route" name="buranosAiresExpectMatchLoose" color=#ff0000
+type="route" name="buranosAiresExpectMatchLoose" color=#ff0000 visible="n"
 type="routepoint" latitude="50.003169772611592" longitude="14.015963241348267"
 type="routepoint" latitude="50.003142188970919" longitude="14.015984699020386"
 type="routepoint" latitude="50.002342256506552" longitude="14.01613490272522"
@@ -1090,6 +1092,137 @@ type="routepoint" latitude="50.019910121958183" longitude="14.006607696304322"
 type="routepoint" latitude="50.022529583002935" longitude="14.008131191024781"
 type="routepoint" latitude="50.020820056195141" longitude="13.99240271736145"
 type="routepoint" latitude="50.020820056195141" longitude="13.99240271736145"
+type="routeend"
+type="route" name="buranosAiresTooLoose" color=#ff0000 visible="n"
+type="routepoint" latitude="50.003997274471509" longitude="13.995878860244751"
+type="routepoint" latitude="50.003721442100876" longitude="14.01313082862854"
+type="routepoint" latitude="50.003666275436814" longitude="14.015963241348267"
+type="routepoint" latitude="50.001625064359331" longitude="14.016735717544556"
+type="routepoint" latitude="49.999418252181883" longitude="14.017765685806275"
+type="routepoint" latitude="50.001073370811682" longitude="14.017594024429322"
+type="routepoint" latitude="49.999197565392713" longitude="14.018795654067993"
+type="routepoint" latitude="49.999252737184968" longitude="14.020083114395142"
+type="routepoint" latitude="50.001431972337826" longitude="14.024074241409302"
+type="routepoint" latitude="50.00202503822247" longitude="14.02737872291565"
+type="routepoint" latitude="50.002687056614533" longitude="14.028279945144654"
+type="routepoint" latitude="50.003321482352078" longitude="14.028172656784058"
+type="routepoint" latitude="50.003804191978261" longitude="14.027893707046509"
+type="routepoint" latitude="50.004714431227903" longitude="14.028473064193726"
+type="routepoint" latitude="50.006327994810277" longitude="14.029781982192993"
+type="routepoint" latitude="50.006907209551052" longitude="14.031477138290406"
+type="routepoint" latitude="50.007582951260233" longitude="14.032271072158814"
+type="routepoint" latitude="50.008851665131992" longitude="14.035017654190064"
+type="routepoint" latitude="50.008699972844852" longitude="14.033751651535034"
+type="routepoint" latitude="50.009899707853094" longitude="14.034223720321656"
+type="routepoint" latitude="50.011347624013617" longitude="14.034245177993775"
+type="routepoint" latitude="50.012312877219117" longitude="14.034137889633179"
+type="routepoint" latitude="50.01276791843447" longitude="14.03362290550232"
+type="routepoint" latitude="50.01309885479381" longitude="14.034567043075562"
+type="routepoint" latitude="50.013360844462007" longitude="14.035124942550659"
+type="routepoint" latitude="50.013912396989326" longitude="14.034888908157349"
+type="routepoint" latitude="50.013622832701834" longitude="14.032013580093384"
+type="routepoint" latitude="50.013319477767247" longitude="14.029996558914185"
+type="routepoint" latitude="50.013595255059641" longitude="14.028215572128296"
+type="routepoint" latitude="50.013912396989326" longitude="14.026584789047241"
+type="routepoint" latitude="50.01268518398853" longitude="14.022293254623413"
+type="routepoint" latitude="50.013236744270912" longitude="14.019739791641236"
+type="routepoint" latitude="50.01268518398853" longitude="14.016328021774292"
+type="routepoint" latitude="50.011733727622278" longitude="14.005706474075318"
+type="routepoint" latitude="50.009361899311465" longitude="14.001522228012085"
+type="routepoint" latitude="50.011775095682083" longitude="13.999698325881958"
+type="routepoint" latitude="50.01104425471614" longitude="13.987445995101929"
+type="routepoint" latitude="50.011126991987162" longitude="13.983583614120484"
+type="routepoint" latitude="50.011126991987162" longitude="13.983540698776245"
+type="routeend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=NizborClimb
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2019-09-03T08:00:00.459060Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="route" name="NizborClimbExpectUpTo3" color=#ff0000
+type="routepoint" latitude="50.016698032288971" longitude="13.985525542022703" newsegment="yes"
+type="routepoint" latitude="50.016698032288971" longitude="13.985525542022703"
+type="routepoint" latitude="50.016477424827272" longitude="14.007347994567869"
+type="routepoint" latitude="50.01602241873865" longitude="13.999623232604979"
+type="routepoint" latitude="50.010810223467324" longitude="14.00084631991577"
+type="routepoint" latitude="50.010368953467371" longitude="14.000932150604246"
+type="routepoint" latitude="50.009831150176836" longitude="14.001039438964842"
+type="routepoint" latitude="50.009279550806696" longitude="14.001189642669676"
+type="routepoint" latitude="50.008714154882092" longitude="14.001296931030272"
+type="routepoint" latitude="50.008024638655336" longitude="14.001425677062986"
+type="routepoint" latitude="50.007417856193143" longitude="14.001618796112059"
+type="routepoint" latitude="50.007073090017798" longitude="14.001554423095701"
+type="routepoint" latitude="50.006866229125542" longitude="14.00133984637451"
+type="routepoint" latitude="50.006714530572076" longitude="14.000996523620604"
+type="routepoint" latitude="50.006590413217666" longitude="14.000653200866697"
+type="routepoint" latitude="50.006424922913226" longitude="14.000438624145506"
+type="routepoint" latitude="50.00620426828764" longitude="14.000352793457029"
+type="routepoint" latitude="50.005983612649111" longitude="14.000438624145506"
+type="routepoint" latitude="50.005625045076066" longitude="14.00084631991577"
+type="routepoint" latitude="50.005225101165934" longitude="14.001232558013914"
+type="routepoint" latitude="50.004852736603041" longitude="14.001404219390867"
+type="routepoint" latitude="50.004452786266967" longitude="14.001532965423582"
+type="routepoint" latitude="50.004176956510122" longitude="14.001876288177488"
+type="routepoint" latitude="50.003873541949503" longitude="14.002219610931395"
+type="routepoint" latitude="50.003501166916735" longitude="14.002434187652586"
+type="routepoint" latitude="50.002411608586627" longitude="14.002927714111326"
+type="routepoint" latitude="50.00220472763305" longitude="14.003442698242186"
+type="routepoint" latitude="50.002053014367924" longitude="14.004064970733641"
+type="routepoint" latitude="50.001901300623999" longitude="14.004901819946287"
+type="routepoint" latitude="50.001446156519506" longitude="14.007884436370848"
+type="routepoint" latitude="49.998797959895711" longitude="14.010008745910643"
+type="routepoint" latitude="50.002590904692887" longitude="14.023677283050535"
+type="routepoint" latitude="49.999473815605704" longitude="14.01681082797241"
+type="routepoint" latitude="49.996549636817498" longitude="14.023419790985105"
+type="routepoint" latitude="49.994342591668058" longitude="14.023891859771727"
+type="routepoint" latitude="49.996701367449887" longitude="14.01181119036865"
+type="routepoint" latitude="50.000122076441365" longitude="14.00533097338867"
+type="routepoint" latitude="49.999073820516706" longitude="14.000245505096434"
 type="routeend"
 ~EndLayerData
 ~EndLayer
