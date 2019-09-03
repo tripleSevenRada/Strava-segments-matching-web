@@ -11,7 +11,7 @@ import javax.validation.Valid;
 
 @Service
 @Validated
-public class SegmentServiceImpl {
+public class SegmentService {
 
     // https://www.baeldung.com/spring-5-webclient
 
