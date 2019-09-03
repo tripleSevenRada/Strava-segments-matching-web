@@ -1,0 +1,1229 @@
+#VIKING GPS Data file http://viking.sf.net/
+FILE_VERSION=1
+
+xmpp=0,250000
+ympp=0,250000
+lat=50,007433
+lon=14,001986
+mode=mercator
+color=#cccccc
+highlightcolor=#eea500
+drawscale=t
+drawcentermark=t
+drawhighlight=t
+
+~Layer Map
+name=Default Map
+visible=f
+mode=19
+directory=
+cache_type=1
+mapfile=
+alpha=255
+autodownload=t
+adlonlymissing=f
+mapzoom=0
+~EndLayer
+
+
+~Layer Map
+name=Map
+mode=13
+directory=
+cache_type=1
+mapfile=
+alpha=255
+autodownload=t
+adlonlymissing=f
+mapzoom=0
+~EndLayer
+
+
+~Layer Map
+name=Default Map
+visible=f
+mode=19
+directory=
+cache_type=1
+mapfile=
+alpha=255
+autodownload=t
+adlonlymissing=f
+mapzoom=0
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment1.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.779558Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Nižbor 2" color=#2d870a
+type="trackpoint" latitude="50.002630000000003" longitude="14.00276" newsegment="yes"
+type="trackpoint" latitude="50.003150000000005" longitude="14.00254"
+type="trackpoint" latitude="50.003590000000003" longitude="14.002419999999999"
+type="trackpoint" latitude="50.003869999999999" longitude="14.00221"
+type="trackpoint" latitude="50.004249999999999" longitude="14.00179"
+type="trackpoint" latitude="50.0045" longitude="14.00155"
+type="trackpoint" latitude="50.004840000000002" longitude="14.00141"
+type="trackpoint" latitude="50.00508" longitude="14.001340000000001"
+type="trackpoint" latitude="50.005549999999999" longitude="14.000910000000001"
+type="trackpoint" latitude="50.005800000000001" longitude="14.00065"
+type="trackpoint" latitude="50.006210000000003" longitude="14.000360000000001"
+type="trackpoint" latitude="50.006489999999999" longitude="14.00055"
+type="trackpoint" latitude="50.006790000000002" longitude="14.001290000000001"
+type="trackpoint" latitude="50.006970000000003" longitude="14.001550000000002"
+type="trackpoint" latitude="50.007200000000005" longitude="14.001680000000002"
+type="trackpoint" latitude="50.007450000000006" longitude="14.001660000000003"
+type="trackpoint" latitude="50.008290000000002" longitude="14.001430000000003"
+type="trackpoint" latitude="50.00976" longitude="14.001110000000002"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment2.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.815461Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Nižbor, sjezd {" color=#2d870a
+type="trackpoint" latitude="50.009860000000003" longitude="14.001100000000001" newsegment="yes"
+type="trackpoint" latitude="50.009710000000005" longitude="14.00112"
+type="trackpoint" latitude="50.009370000000004" longitude="14.001189999999999"
+type="trackpoint" latitude="50.008690000000001" longitude="14.00136"
+type="trackpoint" latitude="50.008009999999999" longitude="14.001469999999999"
+type="trackpoint" latitude="50.007309999999997" longitude="14.001629999999999"
+type="trackpoint" latitude="50.007189999999994" longitude="14.001639999999998"
+type="trackpoint" latitude="50.007069999999992" longitude="14.001619999999999"
+type="trackpoint" latitude="50.006949999999989" longitude="14.00156"
+type="trackpoint" latitude="50.00683999999999" longitude="14.00146"
+type="trackpoint" latitude="50.00674999999999" longitude="14.00132"
+type="trackpoint" latitude="50.006539999999987" longitude="14.000779999999999"
+type="trackpoint" latitude="50.00645999999999" longitude="14.00062"
+type="trackpoint" latitude="50.00636999999999" longitude="14.000499999999999"
+type="trackpoint" latitude="50.00625999999999" longitude="14.000419999999998"
+type="trackpoint" latitude="50.006149999999991" longitude="14.000389999999998"
+type="trackpoint" latitude="50.006029999999988" longitude="14.000409999999997"
+type="trackpoint" latitude="50.005909999999986" longitude="14.000479999999996"
+type="trackpoint" latitude="50.005809999999983" longitude="14.000569999999996"
+type="trackpoint" latitude="50.005209999999984" longitude="14.001239999999996"
+type="trackpoint" latitude="50.005099999999985" longitude="14.001329999999996"
+type="trackpoint" latitude="50.004969999999986" longitude="14.001389999999995"
+type="trackpoint" latitude="50.004599999999989" longitude="14.001489999999995"
+type="trackpoint" latitude="50.00448999999999" longitude="14.001549999999995"
+type="trackpoint" latitude="50.004379999999991" longitude="14.001639999999995"
+type="trackpoint" latitude="50.004089999999991" longitude="14.002019999999995"
+type="trackpoint" latitude="50.003879999999988" longitude="14.002219999999994"
+type="trackpoint" latitude="50.003769999999989" longitude="14.002309999999994"
+type="trackpoint" latitude="50.003529999999991" longitude="14.002439999999995"
+type="trackpoint" latitude="50.003159999999994" longitude="14.002539999999994"
+type="trackpoint" latitude="50.002919999999996" longitude="14.002639999999994"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment3.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.849002Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Nižbor BMX" color=#2d870a visible="n"
+type="trackpoint" latitude="50.000590000000003" longitude="14.001730000000002" newsegment="yes"
+type="trackpoint" latitude="50.000600000000006" longitude="14.001080000000002"
+type="trackpoint" latitude="50.000590000000003" longitude="14.001030000000002"
+type="trackpoint" latitude="50.000620000000005" longitude="14.000760000000001"
+type="trackpoint" latitude="50.000660000000003" longitude="14.000550000000002"
+type="trackpoint" latitude="50.000690000000006" longitude="14.000450000000003"
+type="trackpoint" latitude="50.000750000000004" longitude="14.000460000000002"
+type="trackpoint" latitude="50.000830000000001" longitude="14.000520000000002"
+type="trackpoint" latitude="50.000830000000001" longitude="14.000630000000001"
+type="trackpoint" latitude="50.000790000000002" longitude="14.001050000000001"
+type="trackpoint" latitude="50.000779999999999" longitude="14.001290000000001"
+type="trackpoint" latitude="50.000729999999997" longitude="14.001520000000001"
+type="trackpoint" latitude="50.000719999999994" longitude="14.001670000000001"
+type="trackpoint" latitude="50.000729999999997" longitude="14.001760000000001"
+type="trackpoint" latitude="50.000769999999996" longitude="14.001740000000002"
+type="trackpoint" latitude="50.000829999999993" longitude="14.001610000000001"
+type="trackpoint" latitude="50.000829999999993" longitude="14.001390000000001"
+type="trackpoint" latitude="50.000849999999993" longitude="14.00131"
+type="trackpoint" latitude="50.000879999999995" longitude="14.00107"
+type="trackpoint" latitude="50.000889999999998" longitude="14.000529999999999"
+type="trackpoint" latitude="50.000949999999996" longitude="14.00051"
+type="trackpoint" latitude="50.001019999999997" longitude="14.000590000000001"
+type="trackpoint" latitude="50.000889999999998" longitude="14.0014"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment4.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.880176Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Žlubinec, MTB krátký výjezd {" color=#2d870a visible="n"
+type="trackpoint" latitude="50.010490000000004" longitude="14.016090000000002" newsegment="yes"
+type="trackpoint" latitude="50.010180000000005" longitude="14.015800000000002"
+type="trackpoint" latitude="50.009860000000003" longitude="14.015440000000002"
+type="trackpoint" latitude="50.009730000000005" longitude="14.015180000000001"
+type="trackpoint" latitude="50.009650000000008" longitude="14.014900000000001"
+type="trackpoint" latitude="50.009600000000006" longitude="14.014620000000001"
+type="trackpoint" latitude="50.009400000000007" longitude="14.014390000000001"
+type="trackpoint" latitude="50.009350000000005" longitude="14.01427"
+type="trackpoint" latitude="50.009340000000002" longitude="14.014099999999999"
+type="trackpoint" latitude="50.009230000000002" longitude="14.01394"
+type="trackpoint" latitude="50.009140000000002" longitude="14.013769999999999"
+type="trackpoint" latitude="50.008780000000002" longitude="14.01315"
+type="trackpoint" latitude="50.008620000000001" longitude="14.012979999999999"
+type="trackpoint" latitude="50.008380000000002" longitude="14.012869999999999"
+type="trackpoint" latitude="50.00817" longitude="14.012939999999999"
+type="trackpoint" latitude="50.008009999999999" longitude="14.013029999999999"
+type="trackpoint" latitude="50.007930000000002" longitude="14.013059999999999"
+type="trackpoint" latitude="50.007840000000002" longitude="14.01304"
+type="trackpoint" latitude="50.007760000000005" longitude="14.012980000000001"
+type="trackpoint" latitude="50.007680000000008" longitude="14.012830000000001"
+type="trackpoint" latitude="50.007640000000009" longitude="14.012720000000002"
+type="trackpoint" latitude="50.007590000000008" longitude="14.012500000000001"
+type="trackpoint" latitude="50.007520000000007" longitude="14.01238"
+type="trackpoint" latitude="50.00735000000001" longitude="14.01224"
+type="trackpoint" latitude="50.007270000000013" longitude="14.01214"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment5.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.900968Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Nižbor Climb" color=#2d870a
+type="trackpoint" latitude="50.001930000000002" longitude="14.004790000000002" newsegment="yes"
+type="trackpoint" latitude="50.00197" longitude="14.004480000000001"
+type="trackpoint" latitude="50.002130000000001" longitude="14.003740000000001"
+type="trackpoint" latitude="50.002250000000004" longitude="14.003360000000001"
+type="trackpoint" latitude="50.002440000000007" longitude="14.0029"
+type="trackpoint" latitude="50.002690000000008" longitude="14.002740000000001"
+type="trackpoint" latitude="50.002990000000011" longitude="14.002640000000001"
+type="trackpoint" latitude="50.003280000000011" longitude="14.002500000000001"
+type="trackpoint" latitude="50.003570000000011" longitude="14.002430000000002"
+type="trackpoint" latitude="50.003840000000011" longitude="14.002300000000002"
+type="trackpoint" latitude="50.004070000000013" longitude="14.002100000000002"
+type="trackpoint" latitude="50.00424000000001" longitude="14.001910000000002"
+type="trackpoint" latitude="50.004430000000013" longitude="14.001690000000002"
+type="trackpoint" latitude="50.004500000000014" longitude="14.001630000000002"
+type="trackpoint" latitude="50.004700000000014" longitude="14.001560000000003"
+type="trackpoint" latitude="50.004900000000013" longitude="14.001540000000004"
+type="trackpoint" latitude="50.005140000000011" longitude="14.001430000000004"
+type="trackpoint" latitude="50.00536000000001" longitude="14.001240000000005"
+type="trackpoint" latitude="50.005760000000009" longitude="14.000810000000005"
+type="trackpoint" latitude="50.005860000000013" longitude="14.000680000000004"
+type="trackpoint" latitude="50.005960000000016" longitude="14.000620000000005"
+type="trackpoint" latitude="50.006080000000019" longitude="14.000460000000006"
+type="trackpoint" latitude="50.006170000000019" longitude="14.000400000000006"
+type="trackpoint" latitude="50.00622000000002" longitude="14.000400000000006"
+type="trackpoint" latitude="50.00633000000002" longitude="14.000410000000006"
+type="trackpoint" latitude="50.006450000000022" longitude="14.000490000000006"
+type="trackpoint" latitude="50.006560000000022" longitude="14.000650000000006"
+type="trackpoint" latitude="50.006640000000019" longitude="14.000840000000006"
+type="trackpoint" latitude="50.006730000000019" longitude="14.001180000000005"
+type="trackpoint" latitude="50.006820000000019" longitude="14.001370000000005"
+type="trackpoint" latitude="50.006910000000019" longitude="14.001470000000005"
+type="trackpoint" latitude="50.007030000000022" longitude="14.001560000000005"
+type="trackpoint" latitude="50.00718000000002" longitude="14.001590000000006"
+type="trackpoint" latitude="50.007370000000023" longitude="14.001590000000006"
+type="trackpoint" latitude="50.007460000000023" longitude="14.001560000000005"
+type="trackpoint" latitude="50.008000000000024" longitude="14.001450000000006"
+type="trackpoint" latitude="50.008260000000021" longitude="14.001440000000006"
+type="trackpoint" latitude="50.008360000000025" longitude="14.001400000000006"
+type="trackpoint" latitude="50.008720000000025" longitude="14.001320000000005"
+type="trackpoint" latitude="50.008870000000023" longitude="14.001310000000005"
+type="trackpoint" latitude="50.009060000000026" longitude="14.001270000000005"
+type="trackpoint" latitude="50.009290000000028" longitude="14.001190000000005"
+type="trackpoint" latitude="50.009420000000027" longitude="14.001180000000005"
+type="trackpoint" latitude="50.009670000000028" longitude="14.001110000000006"
+type="trackpoint" latitude="50.009750000000025" longitude="14.001120000000006"
+type="trackpoint" latitude="50.010020000000026" longitude="14.001090000000005"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment6.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.939565Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Nižbor Climb" color=#2d870a
+type="trackpoint" latitude="50.001950000000001" longitude="14.00454" newsegment="yes"
+type="trackpoint" latitude="50.002009999999999" longitude="14.00421"
+type="trackpoint" latitude="50.002139999999997" longitude="14.00365"
+type="trackpoint" latitude="50.002409999999998" longitude="14.00291"
+type="trackpoint" latitude="50.002539999999996" longitude="14.00281"
+type="trackpoint" latitude="50.002839999999999" longitude="14.002660000000001"
+type="trackpoint" latitude="50.003239999999998" longitude="14.002500000000001"
+type="trackpoint" latitude="50.003369999999997" longitude="14.002490000000002"
+type="trackpoint" latitude="50.00356" longitude="14.002430000000002"
+type="trackpoint" latitude="50.003860000000003" longitude="14.002270000000003"
+type="trackpoint" latitude="50.004010000000001" longitude="14.002140000000002"
+type="trackpoint" latitude="50.00414" longitude="14.001990000000003"
+type="trackpoint" latitude="50.004350000000002" longitude="14.001660000000003"
+type="trackpoint" latitude="50.0045" longitude="14.001500000000004"
+type="trackpoint" latitude="50.004860000000001" longitude="14.001410000000003"
+type="trackpoint" latitude="50.005020000000002" longitude="14.001400000000004"
+type="trackpoint" latitude="50.005099999999999" longitude="14.001380000000005"
+type="trackpoint" latitude="50.005279999999999" longitude="14.001280000000005"
+type="trackpoint" latitude="50.005389999999998" longitude="14.001160000000004"
+type="trackpoint" latitude="50.005469999999995" longitude="14.001040000000003"
+type="trackpoint" latitude="50.005779999999994" longitude="14.000660000000003"
+type="trackpoint" latitude="50.005839999999992" longitude="14.000550000000004"
+type="trackpoint" latitude="50.005949999999991" longitude="14.000440000000005"
+type="trackpoint" latitude="50.006069999999994" longitude="14.000380000000005"
+type="trackpoint" latitude="50.006139999999995" longitude="14.000360000000006"
+type="trackpoint" latitude="50.006229999999995" longitude="14.000370000000006"
+type="trackpoint" latitude="50.006329999999998" longitude="14.000420000000005"
+type="trackpoint" latitude="50.006450000000001" longitude="14.000540000000006"
+type="trackpoint" latitude="50.00656" longitude="14.000690000000006"
+type="trackpoint" latitude="50.00665" longitude="14.000930000000006"
+type="trackpoint" latitude="50.006689999999999" longitude="14.001070000000006"
+type="trackpoint" latitude="50.006810000000002" longitude="14.001340000000006"
+type="trackpoint" latitude="50.006920000000001" longitude="14.001480000000006"
+type="trackpoint" latitude="50.006999999999998" longitude="14.001550000000005"
+type="trackpoint" latitude="50.007179999999998" longitude="14.001620000000004"
+type="trackpoint" latitude="50.007629999999999" longitude="14.001540000000004"
+type="trackpoint" latitude="50.007730000000002" longitude="14.001500000000004"
+type="trackpoint" latitude="50.007840000000002" longitude="14.001500000000004"
+type="trackpoint" latitude="50.007910000000003" longitude="14.001460000000003"
+type="trackpoint" latitude="50.008659999999999" longitude="14.001350000000004"
+type="trackpoint" latitude="50.009259999999998" longitude="14.001200000000004"
+type="trackpoint" latitude="50.00994" longitude="14.001080000000004"
+type="trackpoint" latitude="50.010100000000001" longitude="14.001020000000004"
+type="trackpoint" latitude="50.010210000000001" longitude="14.001000000000005"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment7.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:51.984258Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Výjezd na Žlubinec od chaty" color=#2d870a visible="n"
+type="trackpoint" latitude="50.009760000000007" longitude="14.015010000000002" newsegment="yes"
+type="trackpoint" latitude="50.009820000000005" longitude="14.014930000000001"
+type="trackpoint" latitude="50.009740000000008" longitude="14.014520000000001"
+type="trackpoint" latitude="50.009580000000007" longitude="14.014090000000001"
+type="trackpoint" latitude="50.009390000000003" longitude="14.013740000000002"
+type="trackpoint" latitude="50.00891" longitude="14.013220000000002"
+type="trackpoint" latitude="50.008450000000003" longitude="14.012900000000002"
+type="trackpoint" latitude="50.008390000000006" longitude="14.012880000000003"
+type="trackpoint" latitude="50.008180000000003" longitude="14.012910000000003"
+type="trackpoint" latitude="50.008000000000003" longitude="14.013020000000003"
+type="trackpoint" latitude="50.007870000000004" longitude="14.013060000000003"
+type="trackpoint" latitude="50.007780000000004" longitude="14.013060000000003"
+type="trackpoint" latitude="50.007690000000004" longitude="14.012950000000004"
+type="trackpoint" latitude="50.007660000000001" longitude="14.012820000000003"
+type="trackpoint" latitude="50.007629999999999" longitude="14.012410000000003"
+type="trackpoint" latitude="50.007640000000002" longitude="14.011870000000002"
+type="trackpoint" latitude="50.007690000000004" longitude="14.011330000000001"
+type="trackpoint" latitude="50.007850000000005" longitude="14.0105"
+type="trackpoint" latitude="50.008100000000006" longitude="14.008840000000001"
+type="trackpoint" latitude="50.008440000000007" longitude="14.007480000000001"
+type="trackpoint" latitude="50.008630000000011" longitude="14.00689"
+type="trackpoint" latitude="50.008750000000013" longitude="14.006120000000001"
+type="trackpoint" latitude="50.008850000000017" longitude="14.005650000000001"
+type="trackpoint" latitude="50.009060000000019" longitude="14.004900000000001"
+type="trackpoint" latitude="50.009300000000017" longitude="14.004300000000001"
+type="trackpoint" latitude="50.009670000000014" longitude="14.00366"
+type="trackpoint" latitude="50.009870000000014" longitude="14.003209999999999"
+type="trackpoint" latitude="50.009900000000016" longitude="14.002809999999998"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment8.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:52.028825Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="UpToBurranosAires" color=#2d870a visible="n"
+type="trackpoint" latitude="50.000600000000006" longitude="14.017330000000001" newsegment="yes"
+type="trackpoint" latitude="50.000440000000005" longitude="14.017430000000001"
+type="trackpoint" latitude="49.999910000000007" longitude="14.01768"
+type="trackpoint" latitude="49.999620000000007" longitude="14.017760000000001"
+type="trackpoint" latitude="49.999470000000009" longitude="14.017850000000001"
+type="trackpoint" latitude="49.99974000000001" longitude="14.018000000000001"
+type="trackpoint" latitude="49.999950000000013" longitude="14.017990000000001"
+type="trackpoint" latitude="50.000160000000015" longitude="14.018000000000001"
+type="trackpoint" latitude="50.000280000000018" longitude="14.01797"
+type="trackpoint" latitude="50.00051000000002" longitude="14.01788"
+type="trackpoint" latitude="50.000830000000022" longitude="14.017619999999999"
+type="trackpoint" latitude="50.000960000000021" longitude="14.017719999999999"
+type="trackpoint" latitude="50.00069000000002" longitude="14.01803"
+type="trackpoint" latitude="50.000360000000022" longitude="14.01839"
+type="trackpoint" latitude="49.999720000000025" longitude="14.01873"
+type="trackpoint" latitude="49.999480000000027" longitude="14.01878"
+type="trackpoint" latitude="49.999280000000027" longitude="14.018789999999999"
+type="trackpoint" latitude="49.999130000000029" longitude="14.01887"
+type="trackpoint" latitude="49.999030000000026" longitude="14.01915"
+type="trackpoint" latitude="49.998980000000024" longitude="14.019499999999999"
+type="trackpoint" latitude="49.999000000000024" longitude="14.019699999999998"
+type="trackpoint" latitude="49.999060000000021" longitude="14.019999999999998"
+type="trackpoint" latitude="49.999340000000018" longitude="14.020529999999997"
+type="trackpoint" latitude="49.99948000000002" longitude="14.020759999999997"
+type="trackpoint" latitude="49.999680000000019" longitude="14.021049999999997"
+type="trackpoint" latitude="49.999940000000016" longitude="14.021319999999998"
+type="trackpoint" latitude="50.000210000000017" longitude="14.021779999999998"
+type="trackpoint" latitude="50.00031000000002" longitude="14.022019999999998"
+type="trackpoint" latitude="50.000330000000019" longitude="14.022009999999998"
+type="trackpoint" latitude="50.00040000000002" longitude="14.022349999999998"
+type="trackpoint" latitude="50.000960000000021" longitude="14.023819999999997"
+type="trackpoint" latitude="50.001350000000023" longitude="14.024899999999997"
+type="trackpoint" latitude="50.002140000000026" longitude="14.026889999999996"
+type="trackpoint" latitude="50.002310000000023" longitude="14.027379999999996"
+type="trackpoint" latitude="50.002430000000025" longitude="14.027689999999996"
+type="trackpoint" latitude="50.002860000000027" longitude="14.028079999999996"
+type="trackpoint" latitude="50.003100000000025" longitude="14.028029999999996"
+type="trackpoint" latitude="50.003520000000023" longitude="14.027809999999995"
+type="trackpoint" latitude="50.003740000000022" longitude="14.027729999999995"
+type="trackpoint" latitude="50.004060000000024" longitude="14.027769999999995"
+type="trackpoint" latitude="50.004480000000022" longitude="14.028019999999994"
+type="trackpoint" latitude="50.004730000000023" longitude="14.028139999999995"
+type="trackpoint" latitude="50.004950000000022" longitude="14.028339999999995"
+type="trackpoint" latitude="50.005050000000026" longitude="14.028389999999995"
+type="trackpoint" latitude="50.005550000000028" longitude="14.028989999999995"
+type="trackpoint" latitude="50.00569000000003" longitude="14.029209999999996"
+type="trackpoint" latitude="50.00569000000003" longitude="14.029279999999995"
+type="trackpoint" latitude="50.005730000000028" longitude="14.029349999999994"
+type="trackpoint" latitude="50.00605000000003" longitude="14.029789999999993"
+type="trackpoint" latitude="50.006500000000031" longitude="14.030469999999992"
+type="trackpoint" latitude="50.00699000000003" longitude="14.031149999999991"
+type="trackpoint" latitude="50.007430000000028" longitude="14.031639999999991"
+type="trackpoint" latitude="50.007740000000027" longitude="14.03206999999999"
+type="trackpoint" latitude="50.007980000000025" longitude="14.03258999999999"
+type="trackpoint" latitude="50.008240000000022" longitude="14.03351999999999"
+type="trackpoint" latitude="50.008460000000021" longitude="14.03404999999999"
+type="trackpoint" latitude="50.008980000000022" longitude="14.03413999999999"
+type="trackpoint" latitude="50.009540000000023" longitude="14.03441999999999"
+type="trackpoint" latitude="50.010080000000023" longitude="14.03452999999999"
+type="trackpoint" latitude="50.010960000000026" longitude="14.034679999999989"
+type="trackpoint" latitude="50.011470000000024" longitude="14.034679999999989"
+type="trackpoint" latitude="50.011650000000024" longitude="14.034589999999989"
+type="trackpoint" latitude="50.011730000000021" longitude="14.034509999999988"
+type="trackpoint" latitude="50.011850000000024" longitude="14.034359999999989"
+type="trackpoint" latitude="50.011960000000023" longitude="14.034039999999989"
+type="trackpoint" latitude="50.012050000000023" longitude="14.033889999999989"
+type="trackpoint" latitude="50.012370000000026" longitude="14.033429999999989"
+type="trackpoint" latitude="50.012540000000023" longitude="14.033359999999989"
+type="trackpoint" latitude="50.012810000000023" longitude="14.033599999999989"
+type="trackpoint" latitude="50.013060000000024" longitude="14.03400999999999"
+type="trackpoint" latitude="50.013210000000022" longitude="14.03446999999999"
+type="trackpoint" latitude="50.013410000000022" longitude="14.03503999999999"
+type="trackpoint" latitude="50.013620000000024" longitude="14.034829999999991"
+type="trackpoint" latitude="50.013650000000027" longitude="14.034629999999991"
+type="trackpoint" latitude="50.013680000000029" longitude="14.03422999999999"
+type="trackpoint" latitude="50.013530000000031" longitude="14.03351999999999"
+type="trackpoint" latitude="50.013510000000032" longitude="14.03311999999999"
+type="trackpoint" latitude="50.013520000000035" longitude="14.03262999999999"
+type="trackpoint" latitude="50.013490000000033" longitude="14.03239999999999"
+type="trackpoint" latitude="50.013240000000032" longitude="14.03147999999999"
+type="trackpoint" latitude="50.013160000000035" longitude="14.031069999999989"
+type="trackpoint" latitude="50.013110000000033" longitude="14.03020999999999"
+type="trackpoint" latitude="50.013130000000032" longitude="14.02978999999999"
+type="trackpoint" latitude="50.013260000000031" longitude="14.02926999999999"
+type="trackpoint" latitude="50.013380000000033" longitude="14.028899999999989"
+type="trackpoint" latitude="50.013520000000035" longitude="14.028389999999989"
+type="trackpoint" latitude="50.013680000000036" longitude="14.028019999999989"
+type="trackpoint" latitude="50.013850000000033" longitude="14.02766999999999"
+type="trackpoint" latitude="50.013910000000031" longitude="14.027359999999989"
+type="trackpoint" latitude="50.013990000000028" longitude="14.02682999999999"
+type="trackpoint" latitude="50.013960000000026" longitude="14.026759999999991"
+type="trackpoint" latitude="50.014180000000025" longitude="14.02696999999999"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=segment9.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=File with points/tracks from Locus Map/3.39.4
+metadataauthor=
+metadatatime=2019-09-02T11:47:52.171163Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="track" name="Segment" color=#2d870a visible="n"
+type="trackpoint" latitude="50.002110000000002" longitude="14.002820000000002" newsegment="yes"
+type="trackpoint" latitude="50.002230000000004" longitude="14.002860000000002"
+type="trackpoint" latitude="50.002350000000007" longitude="14.002890000000003"
+type="trackpoint" latitude="50.002550000000006" longitude="14.002840000000003"
+type="trackpoint" latitude="50.002580000000009" longitude="14.002890000000003"
+type="trackpoint" latitude="50.002580000000009" longitude="14.002930000000003"
+type="trackpoint" latitude="50.002850000000009" longitude="14.003250000000003"
+type="trackpoint" latitude="50.002750000000006" longitude="14.003230000000004"
+type="trackpoint" latitude="50.002690000000008" longitude="14.003160000000005"
+type="trackpoint" latitude="50.00265000000001" longitude="14.003140000000005"
+type="trackpoint" latitude="50.002600000000008" longitude="14.003190000000005"
+type="trackpoint" latitude="50.002390000000005" longitude="14.004300000000006"
+type="trackpoint" latitude="50.002260000000007" longitude="14.004880000000005"
+type="trackpoint" latitude="50.00227000000001" longitude="14.004840000000005"
+type="trackpoint" latitude="50.002310000000008" longitude="14.004840000000005"
+type="trackpoint" latitude="50.002480000000006" longitude="14.004900000000005"
+type="trackpoint" latitude="50.002740000000003" longitude="14.005100000000004"
+type="trackpoint" latitude="50.002920000000003" longitude="14.005250000000004"
+type="trackpoint" latitude="50.003150000000005" longitude="14.005370000000005"
+type="trackpoint" latitude="50.003180000000008" longitude="14.005370000000005"
+type="trackpoint" latitude="50.003270000000008" longitude="14.005440000000004"
+type="trackpoint" latitude="50.003550000000004" longitude="14.005720000000004"
+type="trackpoint" latitude="50.003990000000002" longitude="14.006060000000003"
+type="trackpoint" latitude="50.004200000000004" longitude="14.006190000000004"
+type="trackpoint" latitude="50.004460000000002" longitude="14.006320000000004"
+type="trackpoint" latitude="50.004719999999999" longitude="14.006580000000005"
+type="trackpoint" latitude="50.004919999999998" longitude="14.006920000000004"
+type="trackpoint" latitude="50.005020000000002" longitude="14.007050000000005"
+type="trackpoint" latitude="50.00515" longitude="14.007130000000005"
+type="trackpoint" latitude="50.005270000000003" longitude="14.007260000000006"
+type="trackpoint" latitude="50.005370000000006" longitude="14.007350000000006"
+type="trackpoint" latitude="50.005500000000005" longitude="14.007520000000007"
+type="trackpoint" latitude="50.005540000000003" longitude="14.007540000000006"
+type="trackpoint" latitude="50.005630000000004" longitude="14.007690000000006"
+type="trackpoint" latitude="50.005820000000007" longitude="14.007890000000005"
+type="trackpoint" latitude="50.00592000000001" longitude="14.008010000000006"
+type="trackpoint" latitude="50.005960000000009" longitude="14.008040000000006"
+type="trackpoint" latitude="50.006040000000006" longitude="14.008160000000007"
+type="trackpoint" latitude="50.006080000000004" longitude="14.008210000000007"
+type="trackpoint" latitude="50.006380000000007" longitude="14.008810000000008"
+type="trackpoint" latitude="50.006450000000008" longitude="14.009040000000008"
+type="trackpoint" latitude="50.006460000000011" longitude="14.009130000000008"
+type="trackpoint" latitude="50.006450000000008" longitude="14.009300000000009"
+type="trackpoint" latitude="50.006700000000009" longitude="14.010290000000008"
+type="trackpoint" latitude="50.006740000000008" longitude="14.010350000000008"
+type="trackpoint" latitude="50.006810000000009" longitude="14.010760000000008"
+type="trackpoint" latitude="50.006870000000006" longitude="14.010980000000009"
+type="trackpoint" latitude="50.007080000000009" longitude="14.01143000000001"
+type="trackpoint" latitude="50.007400000000011" longitude="14.01185000000001"
+type="trackpoint" latitude="50.007510000000011" longitude="14.01207000000001"
+type="trackpoint" latitude="50.007580000000011" longitude="14.01226000000001"
+type="trackpoint" latitude="50.007600000000011" longitude="14.01237000000001"
+type="trackpoint" latitude="50.007740000000013" longitude="14.01263000000001"
+type="trackpoint" latitude="50.007770000000015" longitude="14.01288000000001"
+type="trackpoint" latitude="50.007830000000013" longitude="14.01293000000001"
+type="trackpoint" latitude="50.007940000000012" longitude="14.01293000000001"
+type="trackpoint" latitude="50.008070000000011" longitude="14.01282000000001"
+type="trackpoint" latitude="50.008340000000011" longitude="14.01265000000001"
+type="trackpoint" latitude="50.008450000000011" longitude="14.01265000000001"
+type="trackend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=buranosAires
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2019-09-02T12:51:59.414971Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="route" name="buranosAiresExpectMatch" color=#ff0000 visible="n"
+type="routepoint" latitude="49.995738983101262" longitude="13.998936538457876"
+type="routepoint" latitude="49.995738983101262" longitude="13.998936538457876"
+type="routepoint" latitude="49.995738983101262" longitude="14.00133979773522"
+type="routepoint" latitude="49.995628631389259" longitude="14.005717162847525"
+type="routepoint" latitude="49.995683807276926" longitude="14.006747131109243"
+type="routepoint" latitude="49.996235562671259" longitude="14.007948760747915"
+type="routepoint" latitude="49.997228706426164" longitude="14.010180358648306"
+type="routepoint" latitude="49.99761492345764" longitude="14.012669448614126"
+type="routepoint" latitude="49.99855286618974" longitude="14.0153301999569"
+type="routepoint" latitude="49.99987698948545" longitude="14.013699416875845"
+type="routepoint" latitude="50.001807937255734" longitude="14.012755279302603"
+type="routepoint" latitude="50.003352639631608" longitude="14.013699416875845"
+type="routepoint" latitude="50.003407806655595" longitude="14.016188506841665"
+type="routepoint" latitude="50.002911301160502" longitude="14.016188506841665"
+type="routepoint" latitude="50.00235962237366" longitude="14.016102676153189"
+type="routepoint" latitude="50.001104529548307" longitude="14.016746406316763"
+type="routepoint" latitude="50.000745925579679" longitude="14.017197017431265"
+type="routepoint" latitude="50.000290770536644" longitude="14.017433051824575"
+type="routepoint" latitude="49.999739061676998" longitude="14.017733459234243"
+type="routepoint" latitude="49.999435619105512" longitude="14.017840747594839"
+type="routepoint" latitude="49.999545962080369" longitude="14.017883662939077"
+type="routepoint" latitude="49.999918367750823" longitude="14.017969493627554"
+type="routepoint" latitude="50.000290770536644" longitude="14.017969493627554"
+type="routepoint" latitude="50.000608000264123" longitude="14.017754916906362"
+type="routepoint" latitude="50.000842473065148" longitude="14.017583255529409"
+type="routepoint" latitude="50.001021775023737" longitude="14.017712001562124"
+type="routepoint" latitude="50.000345941074393" longitude="14.018398647069937"
+type="routepoint" latitude="49.999449411991222" longitude="14.018763427495962"
+type="routepoint" latitude="49.999159760560417" longitude="14.018827800512319"
+type="routepoint" latitude="49.998980451657317" longitude="14.019600276708609"
+type="routepoint" latitude="49.999145967591609" longitude="14.020265464544302"
+type="routepoint" latitude="49.999545962080369" longitude="14.020780448675161"
+type="routepoint" latitude="49.999945953241287" longitude="14.021338348150259"
+type="routepoint" latitude="50.000249392591776" longitude="14.021788959264761"
+type="routepoint" latitude="50.000345941074393" longitude="14.022089366674429"
+type="routepoint" latitude="50.00042869676232" longitude="14.022454147100454"
+type="routepoint" latitude="50.002373414420482" longitude="14.027518157720571"
+type="routepoint" latitude="50.0025527106692" longitude="14.027818565130239"
+type="routepoint" latitude="50.00281475782981" longitude="14.027968768835073"
+type="routepoint" latitude="50.003159554549057" longitude="14.028011684179312"
+type="routepoint" latitude="50.003587099046335" longitude="14.02779710745812"
+type="routepoint" latitude="50.003904307022552" longitude="14.027711276769644"
+type="routepoint" latitude="50.004180138343898" longitude="14.027840022802359"
+type="routepoint" latitude="50.00460767376407" longitude="14.028033141851431"
+type="routepoint" latitude="50.004897292372121" longitude="14.028183345556265"
+type="routepoint" latitude="50.005448942036274" longitude="14.028848533391958"
+type="routepoint" latitude="50.00579371986143" longitude="14.029470805883413"
+type="routepoint" latitude="50.00717280643191" longitude="14.031359081029898"
+type="routepoint" latitude="50.007820963451202" longitude="14.032110099554068"
+type="routepoint" latitude="50.00798644894904" longitude="14.032560710668569"
+type="routepoint" latitude="50.008469111729944" longitude="14.034019832372671"
+type="routepoint" latitude="50.009034510537205" longitude="14.034105663061148"
+type="routepoint" latitude="50.009599902693132" longitude="14.034341697454458"
+type="routepoint" latitude="50.010275606545136" longitude="14.034491901159292"
+type="routepoint" latitude="50.010923721721674" longitude="14.034685020208364"
+type="routepoint" latitude="50.011502881080077" longitude="14.034620647192007"
+type="routepoint" latitude="50.011792458141919" longitude="14.034406070470816"
+type="routepoint" latitude="50.012095822716141" longitude="14.033762340307241"
+type="routepoint" latitude="50.01239918537533" longitude="14.033376102209097"
+type="routepoint" latitude="50.012661178858039" longitude="14.033354644536978"
+type="routepoint" latitude="50.012950748940291" longitude="14.033740882635122"
+type="routepoint" latitude="50.013116216775302" longitude="14.034277324438101"
+type="routepoint" latitude="50.013295472953608" longitude="14.034706477880484"
+type="routepoint" latitude="50.013405784115584" longitude="14.034985427618032"
+type="routepoint" latitude="50.013681560912687" longitude="14.034835223913198"
+type="routepoint" latitude="50.013681560912687" longitude="14.034191493749624"
+type="routepoint" latitude="50.013516095024343" longitude="14.033354644536978"
+type="routepoint" latitude="50.013557461549844" longitude="14.032603626012808"
+type="routepoint" latitude="50.013267895123548" longitude="14.031509284734732"
+type="routepoint" latitude="50.013130005735832" longitude="14.029942874670034"
+type="routepoint" latitude="50.013433361866511" longitude="14.028869991064077"
+type="routepoint" latitude="50.013653983304195" longitude="14.02805459952355"
+type="routepoint" latitude="50.013915969945849" longitude="14.027539615392691"
+type="routepoint" latitude="50.013998702272779" longitude="14.026724223852163"
+type="routepoint" latitude="50.014205532466931" longitude="14.026895885229116"
+type="routepoint" latitude="50.015377553418148" longitude="14.026938800573355"
+type="routepoint" latitude="50.01609454037721" longitude="14.027367954015737"
+type="routepoint" latitude="50.016370301743486" longitude="14.027925853490835"
+type="routepoint" latitude="50.016411665811937" longitude="14.028419379949575"
+type="routepoint" latitude="50.016825304537825" longitude="14.029470805883413"
+type="routepoint" latitude="50.0172389397028" longitude="14.030693893194204"
+type="routepoint" latitude="50.017404392771731" longitude="14.031874065160757"
+type="routepoint" latitude="50.017556057584414" longitude="14.033848170995718"
+type="routepoint" latitude="50.017514694501166" longitude="14.035951022863394"
+type="routepoint" latitude="50.01820407457312" longitude="14.036980991125112"
+type="routepoint" latitude="50.020285942348195" longitude="14.039319877386099"
+type="routepoint" latitude="50.021788691499808" longitude="14.039834861516958"
+type="routepoint" latitude="50.023112174756911" longitude="14.043504123449331"
+type="routepoint" latitude="50.023291393644847" longitude="14.046915893316275"
+type="routepoint" latitude="50.022974313618896" longitude="14.051293258428579"
+type="routepoint" latitude="50.02720647018635" longitude="14.054232959508902"
+type="routepoint" latitude="50.028833063082011" longitude="14.057945136785513"
+type="routepoint" latitude="50.028722787338332" longitude="14.062279586553579"
+type="routepoint" latitude="50.028061127558985" longitude="14.065669898748403"
+type="routepoint" latitude="50.029188011412813" longitude="14.067236308813101"
+type="routepoint" latitude="50.031393456814605" longitude="14.068609599828726"
+type="routepoint" latitude="50.034150121143291" longitude="14.068437938451773"
+type="routepoint" latitude="50.037788675751507" longitude="14.069296245336538"
+type="routepoint" latitude="50.041316707813877" longitude="14.063974742650991"
+type="routepoint" latitude="50.046277564264813" longitude="14.06500471091271"
+type="routeend"
+type="route" name="buranosAiresExpectMatchLoose" color=#ff0000 visible="n"
+type="routepoint" latitude="50.003169772611592" longitude="14.015963241348267"
+type="routepoint" latitude="50.003142188970919" longitude="14.015984699020386"
+type="routepoint" latitude="50.002342256506552" longitude="14.01613490272522"
+type="routepoint" latitude="50.001418180021162" longitude="14.016757175216675"
+type="routepoint" latitude="50.000494085773056" longitude="14.017164870986939"
+type="routepoint" latitude="49.999914793754051" longitude="14.017465278396607"
+type="routepoint" latitude="49.999390666388912" longitude="14.017787143478394"
+type="routepoint" latitude="50.000245818619618" longitude="14.01787297416687"
+type="routepoint" latitude="50.000838899137058" longitude="14.017465278396607"
+type="routepoint" latitude="50.000935446435804" longitude="14.017808601150513"
+type="routepoint" latitude="50.000176855293915" longitude="14.018559619674683"
+type="routepoint" latitude="49.999445837959584" longitude="14.018581077346802"
+type="routepoint" latitude="49.99911480758589" longitude="14.019246265182495"
+type="routepoint" latitude="49.999335494754931" longitude="14.020834132919312"
+type="routepoint" latitude="50.000438915405304" longitude="14.022185966262818"
+type="routepoint" latitude="50.001721610079535" longitude="14.025318786392212"
+type="routepoint" latitude="50.0021077910203" longitude="14.027078315505982"
+type="routepoint" latitude="50.002645680732385" longitude="14.02787224937439"
+type="routepoint" latitude="50.003183564425989" longitude="14.028000995407105"
+type="routepoint" latitude="50.003942108124278" longitude="14.027593299636841"
+type="routepoint" latitude="50.004617891518784" longitude="14.028194114456177"
+type="routepoint" latitude="50.005597071009618" longitude="14.029224082717896"
+type="routepoint" latitude="50.00693479103149" longitude="14.030575916061402"
+type="routepoint" latitude="50.007900132868116" longitude="14.032056495437622"
+type="routepoint" latitude="50.008465538368753" longitude="14.034052058944702"
+type="routepoint" latitude="50.010216874172137" longitude="14.034481212387085"
+type="routepoint" latitude="50.011195939604633" longitude="14.034416839370728"
+type="routepoint" latitude="50.012202563548634" longitude="14.033987685928345"
+type="routepoint" latitude="50.012602449400454" longitude="14.033558532485962"
+type="routepoint" latitude="50.01308506582464" longitude="14.034266635665894"
+type="routepoint" latitude="50.013402211121445" longitude="14.035039111862183"
+type="routepoint" latitude="50.013691776738376" longitude="14.034910365829468"
+type="routepoint" latitude="50.013622832702133" longitude="14.033279582748413"
+type="routepoint" latitude="50.013222955341305" longitude="14.030769035110474"
+type="routepoint" latitude="50.013526310885219" longitude="14.028644725570679"
+type="routepoint" latitude="50.013898608253598" longitude="14.027249976882935"
+type="routepoint" latitude="50.013995129322709" longitude="14.026692077407837"
+type="routepoint" latitude="50.014215748181222" longitude="14.026820823440552"
+type="routepoint" latitude="50.01497411778206" longitude="14.026713535079956"
+type="routepoint" latitude="50.015718687200369" longitude="14.027078315505982"
+type="routepoint" latitude="50.016242636541506" longitude="14.027657672653199"
+type="routepoint" latitude="50.016545973022424" longitude="14.02888075996399"
+type="routepoint" latitude="50.017235366993603" longitude="14.030468627700806"
+type="routepoint" latitude="50.01745597097532" longitude="14.035639926681519"
+type="routepoint" latitude="50.019717103389297" longitude="14.037635490188599"
+type="routepoint" latitude="50.020020417935172" longitude="14.0411116330719"
+type="routepoint" latitude="50.021647254182461" longitude="14.045274421463013"
+type="routepoint" latitude="50.021275016850815" longitude="14.036476775894165"
+type="routepoint" latitude="50.021178510405115" longitude="14.029932185897827"
+type="routepoint" latitude="50.02134394990761" longitude="14.027271434555054"
+type="routepoint" latitude="50.020530533534661" longitude="14.012744590530396"
+type="routepoint" latitude="50.01811777684312" longitude="14.00688664604187"
+type="routepoint" latitude="50.019910121958183" longitude="14.006607696304322"
+type="routepoint" latitude="50.022529583002935" longitude="14.008131191024781"
+type="routepoint" latitude="50.020820056195141" longitude="13.99240271736145"
+type="routepoint" latitude="50.020820056195141" longitude="13.99240271736145"
+type="routeend"
+type="route" name="buranosAiresTooLoose" color=#ff0000 visible="n"
+type="routepoint" latitude="50.003997274471509" longitude="13.995878860244751"
+type="routepoint" latitude="50.003721442100876" longitude="14.01313082862854"
+type="routepoint" latitude="50.003666275436814" longitude="14.015963241348267"
+type="routepoint" latitude="50.001625064359331" longitude="14.016735717544556"
+type="routepoint" latitude="49.999418252181883" longitude="14.017765685806275"
+type="routepoint" latitude="50.001073370811682" longitude="14.017594024429322"
+type="routepoint" latitude="49.999197565392713" longitude="14.018795654067993"
+type="routepoint" latitude="49.999252737184968" longitude="14.020083114395142"
+type="routepoint" latitude="50.001431972337826" longitude="14.024074241409302"
+type="routepoint" latitude="50.00202503822247" longitude="14.02737872291565"
+type="routepoint" latitude="50.002687056614533" longitude="14.028279945144654"
+type="routepoint" latitude="50.003321482352078" longitude="14.028172656784058"
+type="routepoint" latitude="50.003804191978261" longitude="14.027893707046509"
+type="routepoint" latitude="50.004714431227903" longitude="14.028473064193726"
+type="routepoint" latitude="50.006327994810277" longitude="14.029781982192993"
+type="routepoint" latitude="50.006907209551052" longitude="14.031477138290406"
+type="routepoint" latitude="50.007582951260233" longitude="14.032271072158814"
+type="routepoint" latitude="50.008851665131992" longitude="14.035017654190064"
+type="routepoint" latitude="50.008699972844852" longitude="14.033751651535034"
+type="routepoint" latitude="50.009899707853094" longitude="14.034223720321656"
+type="routepoint" latitude="50.011347624013617" longitude="14.034245177993775"
+type="routepoint" latitude="50.012312877219117" longitude="14.034137889633179"
+type="routepoint" latitude="50.01276791843447" longitude="14.03362290550232"
+type="routepoint" latitude="50.01309885479381" longitude="14.034567043075562"
+type="routepoint" latitude="50.013360844462007" longitude="14.035124942550659"
+type="routepoint" latitude="50.013912396989326" longitude="14.034888908157349"
+type="routepoint" latitude="50.013622832701834" longitude="14.032013580093384"
+type="routepoint" latitude="50.013319477767247" longitude="14.029996558914185"
+type="routepoint" latitude="50.013595255059641" longitude="14.028215572128296"
+type="routepoint" latitude="50.013912396989326" longitude="14.026584789047241"
+type="routepoint" latitude="50.01268518398853" longitude="14.022293254623413"
+type="routepoint" latitude="50.013236744270912" longitude="14.019739791641236"
+type="routepoint" latitude="50.01268518398853" longitude="14.016328021774292"
+type="routepoint" latitude="50.011733727622278" longitude="14.005706474075318"
+type="routepoint" latitude="50.009361899311465" longitude="14.001522228012085"
+type="routepoint" latitude="50.011775095682083" longitude="13.999698325881958"
+type="routepoint" latitude="50.01104425471614" longitude="13.987445995101929"
+type="routepoint" latitude="50.011126991987162" longitude="13.983583614120484"
+type="routepoint" latitude="50.011126991987162" longitude="13.983540698776245"
+type="routeend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=NizborClimb
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30,000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2019-09-03T08:00:00.459060Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypointlistend"
+type="route" name="NizborClimbExpectUpTo3" color=#ff0000
+type="routepoint" latitude="50.016698032288971" longitude="13.985525542022703" newsegment="yes"
+type="routepoint" latitude="50.016698032288971" longitude="13.985525542022703"
+type="routepoint" latitude="50.016477424827272" longitude="14.007347994567869"
+type="routepoint" latitude="50.01602241873865" longitude="13.999623232604979"
+type="routepoint" latitude="50.010810223467324" longitude="14.00084631991577"
+type="routepoint" latitude="50.010368953467371" longitude="14.000932150604246"
+type="routepoint" latitude="50.009831150176836" longitude="14.001039438964842"
+type="routepoint" latitude="50.009279550806696" longitude="14.001189642669676"
+type="routepoint" latitude="50.008714154882092" longitude="14.001296931030272"
+type="routepoint" latitude="50.008024638655336" longitude="14.001425677062986"
+type="routepoint" latitude="50.007417856193143" longitude="14.001618796112059"
+type="routepoint" latitude="50.007073090017798" longitude="14.001554423095701"
+type="routepoint" latitude="50.006866229125542" longitude="14.00133984637451"
+type="routepoint" latitude="50.006714530572076" longitude="14.000996523620604"
+type="routepoint" latitude="50.006590413217666" longitude="14.000653200866697"
+type="routepoint" latitude="50.006424922913226" longitude="14.000438624145506"
+type="routepoint" latitude="50.00620426828764" longitude="14.000352793457029"
+type="routepoint" latitude="50.005983612649111" longitude="14.000438624145506"
+type="routepoint" latitude="50.005625045076066" longitude="14.00084631991577"
+type="routepoint" latitude="50.005225101165934" longitude="14.001232558013914"
+type="routepoint" latitude="50.004852736603041" longitude="14.001404219390867"
+type="routepoint" latitude="50.004452786266967" longitude="14.001532965423582"
+type="routepoint" latitude="50.004176956510122" longitude="14.001876288177488"
+type="routepoint" latitude="50.003873541949503" longitude="14.002219610931395"
+type="routepoint" latitude="50.003501166916735" longitude="14.002434187652586"
+type="routepoint" latitude="50.002411608586627" longitude="14.002927714111326"
+type="routepoint" latitude="50.00220472763305" longitude="14.003442698242186"
+type="routepoint" latitude="50.002053014367924" longitude="14.004064970733641"
+type="routepoint" latitude="50.001901300623999" longitude="14.004901819946287"
+type="routepoint" latitude="50.001446156519506" longitude="14.007884436370848"
+type="routepoint" latitude="49.998797959895711" longitude="14.010008745910643"
+type="routepoint" latitude="50.002590904692887" longitude="14.023677283050535"
+type="routepoint" latitude="49.999473815605704" longitude="14.01681082797241"
+type="routepoint" latitude="49.996549636817498" longitude="14.023419790985105"
+type="routepoint" latitude="49.994342591668058" longitude="14.023891859771727"
+type="routepoint" latitude="49.996701367449887" longitude="14.01181119036865"
+type="routepoint" latitude="50.000122076441365" longitude="14.00533097338867"
+type="routepoint" latitude="49.999073820516706" longitude="14.000245505096434"
+type="routeend"
+~EndLayerData
+~EndLayer
+

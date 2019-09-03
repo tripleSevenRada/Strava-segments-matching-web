@@ -1,0 +1,8 @@
+./gradlew bootRun
+
+https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
+
+curl -s -o /dev/null -w "%{http_code}"
+
+curl -d "@mockRequestedRoute.json" -H "Content-Type: application/json" -X POST http://localhost:8080/match
+curl -d "@mockRequestedRouteKolemBerouna.json" -H "Content-Type: application/json" -X POST http://localhost:8080/match

@@ -1,16 +1,16 @@
 package com.matching.segmentsmatching.resources;
 
-public class Location {
+public class LatLonPair {
 
     private double lat;
     private double lon;
 
-    public Location(double lat, double lon) {
+    public LatLonPair(double lat, double lon) {
         this.lat = lat;
         this.lon = lon;
     }
 
-    public Location(){}
+    public LatLonPair(){}
 
     public double getLat() { return lat; }
     public double getLon() {
@@ -20,6 +20,11 @@ public class Location {
     public void setLat(double lat) { this.lat = lat; }
     public void setLon(double lon) {
         this.lon = lon;
+    }
+
+    @Override
+    public String toString(){
+        return this.getClass().getSimpleName() + "; lat:" + lat + ", lon:" + lon;
     }
 
 }

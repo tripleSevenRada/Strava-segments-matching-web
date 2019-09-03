@@ -3,7 +3,8 @@ package com.matching.segmentsmatching;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matching.segmentsmatching.resources.ActivityType;
-import com.matching.segmentsmatching.resources.Location;
+import com.matching.segmentsmatching.resources.LatLonPair;
+import com.matching.segmentsmatching.resources.MatchingScenario;
 import com.matching.segmentsmatching.resources.RequestedRoute;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +29,7 @@ import static junit.framework.TestCase.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SegmentsMatchingApplicationTests {
+public class RequestedRouteTests {
 
     // https://medium.com/@tbrouwer/testing-a-spring-boot-restful-service-c61b981cac61
     // https://phauer.com/2016/testing-restful-services-java-best-practices/
@@ -54,33 +55,33 @@ public class SegmentsMatchingApplicationTests {
         return mapper.readValue(json, clazz);
     }
 
-    private List<Location> getValidLocations(){
-        List<Location> locations = new LinkedList<>();
-        locations.add(new Location(1.0, 2.0));
-        locations.add(new Location(3.0, 4.0));
+    private List<LatLonPair> getValidLocations(){
+        List<LatLonPair> locations = new LinkedList<>();
+        locations.add(new LatLonPair(1.0, 2.0));
+        locations.add(new LatLonPair(3.0, 4.0));
         return locations;
     }
 
-    private List<Location> getLargeRandomizedLocationList(int size){
-        List<Location> locations = new LinkedList<>();
+    private List<LatLonPair> getLargeRandomizedLocationList(int size){
+        List<LatLonPair> locations = new LinkedList<>();
         Random rnd = new Random();
         for(int i = 0; i < size; i++){
-            locations.add(new Location(rnd.nextDouble(), rnd.nextDouble()));
+            locations.add(new LatLonPair(rnd.nextDouble(), rnd.nextDouble()));
         }
         return locations;
     }
 
-    private List<Location> getEmptyLocations(){
-        return new LinkedList<Location>();
+    private List<LatLonPair> getEmptyLocations(){
+        return new LinkedList<LatLonPair>();
     }
 
     private class Setup{
         String token;
-        List<Location> locations;
+        List<LatLonPair> locations;
         int expectedStatusCode;
         MediaType mediaType;
 
-        Setup(String token, List<Location> locations, MediaType mediaType, int expectedStatusCode) {
+        Setup(String token, List<LatLonPair> locations, MediaType mediaType, int expectedStatusCode) {
             this.token = token;
             this.locations = locations;
             this.mediaType = mediaType;
@@ -88,7 +89,7 @@ public class SegmentsMatchingApplicationTests {
         }
     }
 
-    private List<List<Location>> locations = new ArrayList<List<Location>>();
+    private List<List<LatLonPair>> locations = new ArrayList<List<LatLonPair>>();
     private void populateLocations(){
         locations.add(getEmptyLocations());
         locations.add(getValidLocations());
@@ -104,17 +105,17 @@ public class SegmentsMatchingApplicationTests {
     }
 
     private String [] tokens = new String[] {
-            "bvc77cdd6000365506e7149b77283eb0qmklkjhg",
+            "b0d77cdd6000365506e7149b77283eb064f36982",
             "",
-            "bvc77cdd6000365506e7149b77283eb0qmklkjhg",
+            "b0d77cdd6000365506e7149b77283eb064f36982",
             null,
             null,
             "",
             "x",
             "xx",
             "xxx",
-            "bvc77cdd6000365506e7149b77283eb0qmklkjhg",
-            "bvc77cdd6000365506e7149b77283eb0qmklkjhg"
+            "b0d77cdd6000365506e7149b77283eb064f36982",
+            "b0d77cdd6000365506e7149b77283eb064f36982"
     };
 
     private MediaType[] types = new MediaType[]{
@@ -139,11 +140,11 @@ public class SegmentsMatchingApplicationTests {
     }
 
     @Test
-    public void testJSONResponse() throws Exception {
+    public void testJSONResponseFromMatchingController() throws Exception {
         for (int i = 0; i < tokens.length; i++) {
             setUpMvc();
             Setup setup = getSetup(i);
-            RequestedRoute r = new RequestedRoute(setup.locations, ActivityType.RIDE, setup.token);
+            RequestedRoute r = new RequestedRoute(setup.locations, ActivityType.RIDE, MatchingScenario.ROUTE, setup.token);
             String inputJson = mapToJson(r);
             MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                     .contentType(setup.mediaType).content(inputJson)).andReturn();
@@ -155,4 +156,5 @@ public class SegmentsMatchingApplicationTests {
             System.out.println("_response content_" + content);
         }
     }
+
 }

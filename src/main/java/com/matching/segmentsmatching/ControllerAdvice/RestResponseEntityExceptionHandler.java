@@ -1,8 +1,9 @@
 package com.matching.segmentsmatching.ControllerAdvice;
 
+import com.matching.segmentsmatching.exceptions.MatchingValidityException;
 import com.matching.segmentsmatching.rest.Errors;
+import com.matching.segmentsmatching.rest.JustMessage;
 import com.matching.segmentsmatching.rest.ValidationError;
-import com.matching.segmentsmatching.rest.WebClientError;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,8 +11,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.reactive.function.client.WebClientException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.util.List;
@@ -38,6 +40,11 @@ public class RestResponseEntityExceptionHandler
 
         return handleExceptionInternal(ex, null, headers, status, request);
     }
+
+    The @ControllerAdvice annotation was first introduced in Spring 3.2. It allows you to
+    handle exceptions across the whole application, not just to an individual controller.
+    You can think of it as an interceptor of exceptions
+    thrown by methods ANNOTATED with @RequestMapping or one of the shortcuts.
     */
 
     @Override
@@ -51,11 +58,19 @@ public class RestResponseEntityExceptionHandler
         errors.setErrors(errorList);
         return ResponseEntity.badRequest().body(errors);
     }
-
-    @ExceptionHandler(WebClientException.class)
-    protected ResponseEntity<WebClientError> handleWebClientException(
-            WebClientException ex) {
-        return ResponseEntity.badRequest().body(new WebClientError(ex.getMessage()));
+    @ExceptionHandler(MatchingValidityException.class)
+    protected ResponseEntity<Object> handleMatchingValidityException(MatchingValidityException mve){
+        JustMessage message = new JustMessage(mve.getMessage());
+        return ResponseEntity.badRequest().body(message);
     }
-
+    @ExceptionHandler(HttpClientErrorException.class)
+    protected ResponseEntity<Object> handleHttpClientErrorException(HttpClientErrorException hcee) {
+        JustMessage message = new JustMessage(hcee.getMessage());
+        return ResponseEntity.status(hcee.getStatusCode()).body(message);
+    }
+    @ExceptionHandler(HttpServerErrorException.class)
+    protected ResponseEntity<Object> handleHttpServerErrorException(HttpServerErrorException hsee) {
+        JustMessage message = new JustMessage(hsee.getMessage());
+        return ResponseEntity.status(hsee.getStatusCode()).body(message);
+    }
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Map, Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="http://www.locusmap.eu">
+	<metadata>
+		<desc>File with points/tracks from Locus Map/3.39.4</desc>
+	</metadata>
+<trk>
+<name>Výjezd na Žlubinec od chaty</name>
+<trkseg>
+<trkpt lat="50.00976000000001" lon="14.015010000000002">
+</trkpt>
+<trkpt lat="50.009820000000005" lon="14.014930000000001">
+</trkpt>
+<trkpt lat="50.00974000000001" lon="14.014520000000001">
+</trkpt>
+<trkpt lat="50.00958000000001" lon="14.014090000000001">
+</trkpt>
+<trkpt lat="50.00939" lon="14.013740000000002">
+</trkpt>
+<trkpt lat="50.00891" lon="14.013220000000002">
+</trkpt>
+<trkpt lat="50.00845" lon="14.012900000000002">
+</trkpt>
+<trkpt lat="50.008390000000006" lon="14.012880000000003">
+</trkpt>
+<trkpt lat="50.00818" lon="14.012910000000003">
+</trkpt>
+<trkpt lat="50.008" lon="14.013020000000003">
+</trkpt>
+<trkpt lat="50.007870000000004" lon="14.013060000000003">
+</trkpt>
+<trkpt lat="50.007780000000004" lon="14.013060000000003">
+</trkpt>
+<trkpt lat="50.007690000000004" lon="14.012950000000004">
+</trkpt>
+<trkpt lat="50.00766" lon="14.012820000000003">
+</trkpt>
+<trkpt lat="50.00763" lon="14.012410000000003">
+</trkpt>
+<trkpt lat="50.00764" lon="14.011870000000002">
+</trkpt>
+<trkpt lat="50.007690000000004" lon="14.011330000000001">
+</trkpt>
+<trkpt lat="50.007850000000005" lon="14.0105">
+</trkpt>
+<trkpt lat="50.008100000000006" lon="14.008840000000001">
+</trkpt>
+<trkpt lat="50.00844000000001" lon="14.007480000000001">
+</trkpt>
+<trkpt lat="50.00863000000001" lon="14.00689">
+</trkpt>
+<trkpt lat="50.00875000000001" lon="14.006120000000001">
+</trkpt>
+<trkpt lat="50.00885000000002" lon="14.005650000000001">
+</trkpt>
+<trkpt lat="50.00906000000002" lon="14.004900000000001">
+</trkpt>
+<trkpt lat="50.00930000000002" lon="14.0043">
+</trkpt>
+<trkpt lat="50.009670000000014" lon="14.00366">
+</trkpt>
+<trkpt lat="50.009870000000014" lon="14.00321">
+</trkpt>
+<trkpt lat="50.009900000000016" lon="14.002809999999998">
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
