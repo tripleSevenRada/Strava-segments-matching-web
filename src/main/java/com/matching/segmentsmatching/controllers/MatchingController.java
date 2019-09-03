@@ -1,8 +1,5 @@
 package com.matching.segmentsmatching.controllers;
 
-import com.matching.segmentsmatching.resources.MatchingResult;
-import com.matching.segmentsmatching.resources.RequestedRoute;
-import com.matching.segmentsmatching.services.SegmentService;
 import com.matching.segmentsmatching.exceptions.MatchingValidityException;
 import com.matching.segmentsmatching.resources.*;
 import com.matching.segmentsmatching.services.*;
