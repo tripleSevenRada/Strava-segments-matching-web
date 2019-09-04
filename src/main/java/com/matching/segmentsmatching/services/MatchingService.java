@@ -64,17 +64,25 @@ public class MatchingService {
                 List<LocationIndex> candidate = candidates.getCandidates().get(j);
                 MatcherWrapper wrapper = new MatcherWrapper();
                 if (wrapper.matchParallel(candidate, segment, config)) {
-                    //TODO start and finish indices in the original route
+                    // prepare helpers
+                    Location segStartLoc = segment.getElements().get(0);
+                    int segLastInd = segment.getElements().size() - 1;
+                    Location segFinishLoc = segment.getElements().get(segLastInd);
+                    // start and finish indices in the original route
+                    Location start = new Location(segStartLoc.getLat(), segStartLoc.getLon());
+                    int indexStart = wrapper.getClosestIndexInRoute(originalRoute, start);
+                    Location finish = new Location(segFinishLoc.getLat(), segFinishLoc.getLon());
+                    int indexFinish = wrapper.getClosestIndexInRoute(originalRoute, finish);
                     result.add(new SegmentDetected(
                             segment.getName(),
-                            segment.getElements().get(0).getLat(),
-                            segment.getElements().get(0).getLon(),
-                            segment.getElements().get(segment.getElements().size() - 1).getLat(),
-                            segment.getElements().get(segment.getElements().size() - 1).getLon(),
-                            0,
-                            0
+                            segStartLoc.getLat(),
+                            segStartLoc.getLon(),
+                            segFinishLoc.getLat(),
+                            segFinishLoc.getLon(),
+                            indexStart,
+                            indexFinish
                     ));
-                    // if route goes in rounds (laps) then only on first round is the segment detected
+                    // if route goes in rounds (laps) then only on first round the segment is detected
                     break;
                 }
             }

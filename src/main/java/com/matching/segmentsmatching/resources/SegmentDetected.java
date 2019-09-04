@@ -1,5 +1,6 @@
 package com.matching.segmentsmatching.resources;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.jetbrains.annotations.NotNull;
 
 import javax.validation.constraints.Max;
@@ -7,6 +8,14 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import java.util.Objects;
 
+@JsonPropertyOrder({
+        "name",
+        "latitudeStart",
+        "longitudeStart",
+        "latitudeFinish",
+        "longitudeFinish",
+        "startIndexInOriginalRoute",
+        "finishIndexInOriginalRoute"})
 public class SegmentDetected implements Comparable<SegmentDetected>{
 
     @NotBlank(message = "name must not be blank")
@@ -17,7 +26,8 @@ public class SegmentDetected implements Comparable<SegmentDetected>{
     private double longitudeStart;
     @Min(-90) @Max(90)
     private double latitudeFinish;
-
+    @Min(-180) @Max(180)
+    private double longitudeFinish;
     private int startIndexInOriginalRoute;
     private int finishIndexInOriginalRoute;
 
@@ -37,9 +47,6 @@ public class SegmentDetected implements Comparable<SegmentDetected>{
     public int hashCode() {
         return Objects.hash(name, latitudeStart, longitudeStart, latitudeFinish, longitudeFinish);
     }
-
-    @Min(-180) @Max(180)
-    private double longitudeFinish;
 
     public SegmentDetected(String name, double latitudeStart, double longitudeStart,
                            double latitudeFinish, double longitudeFinish,
@@ -95,7 +102,8 @@ public class SegmentDetected implements Comparable<SegmentDetected>{
     @Override
     public String toString() {
         return "SegmentDetected{" +
-                "startIndexInOriginalRoute=" + startIndexInOriginalRoute +
+                "name='" + name + '\'' +
+                ", startIndexInOriginalRoute=" + startIndexInOriginalRoute +
                 ", finishIndexInOriginalRoute=" + finishIndexInOriginalRoute +
                 '}';
     }
