@@ -50,4 +50,12 @@ public class RequestedRoute {
     public ActivityType getType() { return type; }
     public MatchingScenario getMatchingScenario() { return matchingScenario; }
     public String getToken(){ return token; }
+
+    @Override
+    public String toString() {
+        return "RequestedRoute{" +
+                "type=" + type +
+                ", matchingScenario=" + matchingScenario +
+                '}';
+    }
 }

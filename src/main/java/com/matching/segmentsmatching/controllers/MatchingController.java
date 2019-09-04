@@ -25,26 +25,34 @@ public class MatchingController {
 
     private static final Logger LOG = LoggerFactory.getLogger(MatchingController.class);
 
-    @Autowired
-    private TestSegmentService segmentService; //SegmentService
-    @Autowired
+    private SegmentService segmentService; //TestSegmentService
     private MatchingService matchingService;
-    @Autowired
     private DiscretizingService discretizingService;
+
+    @Autowired
+    public MatchingController(SegmentService segmentService,
+                              MatchingService matchingService,
+                              DiscretizingService discretizingService) {
+        this.segmentService = segmentService;
+        this.matchingService = matchingService;
+        this.discretizingService = discretizingService;
+    }
 
     private boolean verbose = true;
 
     @RequestMapping(value = "/match", method = RequestMethod.POST)
     public MatchingResult match(@Valid @RequestBody(required = true) RequestedRoute requestedRoute) {
-
+        if (verbose) LOG.info("requested: " + requestedRoute.toString());
         String token = requestedRoute.getToken();
         ActivityType type = requestedRoute.getType();
 
         LatLonBox latLonBox = null;
         try {
             latLonBox = matchingService.getBox(requestedRoute);
-        } catch (RuntimeException re) { throwMVE(re.getMessage(),1); }
-        if(latLonBox == null)
+        } catch (RuntimeException re) {
+            throwMVE(re.getMessage(), 1);
+        }
+        if (latLonBox == null)
             throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR); // should never happen
         String segmentsRaw = null;
         try {
@@ -56,7 +64,7 @@ public class MatchingController {
         }
         if (segmentsRaw == null)
             throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR); // should never happen
-        List<SegmentParsed> segments = null;
+        List<SegmentParsed> segments;
         try {
             XMLNomiResponseParser parser = new XMLNomiResponseParser();
             segments = parser.parseXMLNomiResponse(segmentsRaw);
@@ -68,7 +76,7 @@ public class MatchingController {
 
         // In case we have found no segments in the above specified box:
         // Short circuit this controller and return empty result with OK status
-        if(segments.isEmpty()) return new MatchingResult();
+        if (segments.isEmpty()) return new MatchingResult();
 
         if (verbose) {
             LOG.info("LatLonBox: " + latLonBox.toString());
@@ -80,7 +88,7 @@ public class MatchingController {
         List<Segment> discretizedSegments = discretizingService
                 .segmentsDiscretizeParallel(inputSegmentsForDiscretization);
 
-        if(verbose) discretizedSegments.forEach(s -> LOG.info(s.toString()));
+        if (verbose) discretizedSegments.forEach(s -> LOG.info(s.toString()));
         Route inputRouteForDiscretization =
                 discretizingService.copyRoute(requestedRoute);
         LOG.info("input: " + inputRouteForDiscretization.toString());
@@ -104,15 +112,15 @@ public class MatchingController {
         if (verbose) LOG.info("matching service returned now");
 
         LOG.info(result.toString());
-        if(verbose){
-            result.getSegmentDetectedList().forEach( detected ->
+        if (verbose) {
+            result.getSegmentDetectedList().forEach(detected ->
                     LOG.info(detected.toString())
             );
         }
         return result;
     }
 
-    private void throwMVE(String message, long id){
+    private void throwMVE(String message, long id) {
         throw new MatchingValidityException(message + " " + id);
     }
 }

@@ -24,7 +24,7 @@ public class MatchingService {
                 {
                     put(MatchingScenario.ROUTE, new MatchingConfig(0.94, 14.0));
                     put(MatchingScenario.RECORDED, new MatchingConfig(0.90, 18.0));
-                    put(MatchingScenario.LOOSE, new MatchingConfig(0.86, 24.0));
+                    put(MatchingScenario.LOOSE, new MatchingConfig(0.86, 26.0));
                 }
             };
 

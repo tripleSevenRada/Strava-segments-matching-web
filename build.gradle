@@ -4,6 +4,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
 
 group = 'com.matching'
 version = '0.0.1-SNAPSHOT'
@@ -24,5 +25,5 @@ dependencies {
 }
 
 dependencies {
-	compile files('/home/radim/IdeaProjects/segments-matching/lib/StravaSegmentsMatching.jar')
+	compile files('/home/radim/IdeaProjects/Strava-segments-matching-web/lib/StravaSegmentsMatching.jar')
 }
