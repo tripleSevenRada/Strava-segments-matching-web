@@ -1,1 +1,1 @@
-{"locations":[{"lat":1.0,"lon":2.0},{"lat":3.0,"lon":4.0}],"type":"RIDE","matchingScenario":"ROUTE","token":"token"}
+{"locations":[{"lat":1.0,"lon":2.0},{"lat":3.0,"lon":4.0}],"type":"RIDE","matchingScenario":"ROUTE","token":"invalid"}
