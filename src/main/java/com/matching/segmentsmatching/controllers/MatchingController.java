@@ -19,6 +19,7 @@ import org.springframework.web.client.HttpServerErrorException;
 import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.function.Function;
 
 @RestController
 public class MatchingController {
@@ -40,11 +41,27 @@ public class MatchingController {
 
     private boolean verbose = true;
 
+    @SuppressWarnings("unchecked")
+    public <T extends Enum> T getEnum(Function<String, String> letterCase, String validatedString, Class<T> type) {
+        Object[] enums = type.getEnumConstants();
+        for (Object e : enums) {
+            if (e.toString().equals(letterCase.apply(validatedString))) {
+                return (T) e;
+            }
+        }
+        return null;
+    }
+
     @RequestMapping(value = "/match", method = RequestMethod.POST)
     public MatchingResult match(@Valid @RequestBody(required = true) RequestedRoute requestedRoute) {
-        if (verbose) LOG.info("requested: " + requestedRoute.toString());
+        LOG.info("---------requested: " + requestedRoute.toString());
         String token = requestedRoute.getToken();
-        ActivityType type = requestedRoute.getType();
+
+        // convert validated strings to their enums;
+        ActivityType type = getEnum(String::toLowerCase, requestedRoute.getType(), ActivityType.class);
+        MatchingScenario scenario = getEnum(String::toLowerCase, requestedRoute.getMatchingScenario(), MatchingScenario.class);
+        if (type == null || scenario == null)
+            throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR); // should never happen
 
         LatLonBox latLonBox = null;
         try {
@@ -80,9 +97,9 @@ public class MatchingController {
 
         if (verbose) {
             LOG.info("LatLonBox: " + latLonBox.toString());
-            segments.forEach(s -> LOG.info(s.toString()));
         }
         List<Segment> inputSegmentsForDiscretization = discretizingService.copySegments(segments);
+        LOG.info("inputSegmentsForDiscretization.size(): " + inputSegmentsForDiscretization.size());
 
         // discretizedSegments
         List<Segment> discretizedSegments = discretizingService
@@ -91,19 +108,19 @@ public class MatchingController {
         if (verbose) discretizedSegments.forEach(s -> LOG.info(s.toString()));
         Route inputRouteForDiscretization =
                 discretizingService.copyRoute(requestedRoute);
-        LOG.info("input: " + inputRouteForDiscretization.toString());
+        LOG.info("input Route: " + inputRouteForDiscretization.toString());
 
         // discretizedRoute
         Route discretizedRoute =
                 discretizingService.routeDiscretizeParallel(inputRouteForDiscretization);
 
-        LOG.info("discretized: " + discretizedRoute.toString());
+        LOG.info("discretized Route: " + discretizedRoute.toString());
         if (verbose) LOG.info("invoking matching service now");
 
         MatchingResult result;
         try {
             result = matchingService.getMatchingResult(inputRouteForDiscretization, discretizedRoute,
-                    discretizedSegments, requestedRoute.getMatchingScenario());
+                    discretizedSegments, scenario);
         } catch (Exception e) {
             throw new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR);
         }

@@ -1,5 +1,7 @@
 package com.matching.segmentsmatching.resources;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 public enum MatchingScenario {
     // allow more "loose" matching for recorded tracks and for testing
     ROUTE("route"),
@@ -8,5 +10,9 @@ public enum MatchingScenario {
     public final String label;
     private MatchingScenario(String label) {
         this.label = label;
+    }
+    @Override
+    public String toString(){
+        return label;
     }
 }

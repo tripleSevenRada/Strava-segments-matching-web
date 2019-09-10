@@ -14,9 +14,10 @@ public class MatchingResult {
         segmentsDetected.add(segmentDetected);
     }
 
-    public void organize(){
+    public MatchingResult organize(){
         removeDuplicities();
         Collections.sort(segmentsDetected);
+        return this;
     }
 
     private void removeDuplicities() {
@@ -35,6 +36,6 @@ public class MatchingResult {
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + " segments detected: " + segmentsDetected.size();
+        return this.getClass().getSimpleName() + ", segments detected: " + segmentsDetected.size();
     }
 }
