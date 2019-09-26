@@ -87,6 +87,6 @@ public class MatchingService {
                 }
             }
         }
-        return result;
+        return result.organize();
     }
 }

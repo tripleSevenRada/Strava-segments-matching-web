@@ -144,7 +144,7 @@ public class RequestedRouteTests {
         for (int i = 0; i < tokens.length; i++) {
             setUpMvc();
             Setup setup = getSetup(i);
-            RequestedRoute r = new RequestedRoute(setup.locations, ActivityType.RIDE, MatchingScenario.ROUTE, setup.token);
+            RequestedRoute r = new RequestedRoute(setup.locations, "ride", "route", setup.token);
             String inputJson = mapToJson(r);
             MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                     .contentType(setup.mediaType).content(inputJson)).andReturn();
