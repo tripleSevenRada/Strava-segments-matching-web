@@ -1,11 +1,11 @@
 package com.matching.segmentsmatching.resources;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import org.jetbrains.annotations.NotNull;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
 @JsonPropertyOrder({
