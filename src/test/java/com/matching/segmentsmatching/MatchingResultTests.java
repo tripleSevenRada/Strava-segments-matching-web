@@ -28,8 +28,8 @@ public class MatchingResultTests {
 
         result.organize();
 
-        assertEquals(2, result.getSegmentDetectedList().size());
-        assertEquals("name2", result.getSegmentDetectedList().get(0).getName());
-        assertEquals("name1", result.getSegmentDetectedList().get(1).getName());
+        assertEquals(2, result.getSegmentsDetected().size());
+        assertEquals("name2", result.getSegmentsDetected().get(0).getName());
+        assertEquals("name1", result.getSegmentsDetected().get(1).getName());
     }
 }

@@ -42,7 +42,7 @@ public class MatchingController {
     private boolean verbose = true;
 
     @SuppressWarnings("unchecked")
-    public <T extends Enum> T getEnum(Function<String, String> letterCase, String validatedString, Class<T> type) {
+    public <T extends Enum <T>> T getEnum(Function<String, String> letterCase, String validatedString, Class<T> type) {
         Object[] enums = type.getEnumConstants();
         for (Object e : enums) {
             if (e.toString().equals(letterCase.apply(validatedString))) {
@@ -130,7 +130,7 @@ public class MatchingController {
 
         LOG.info(result.toString());
         if (verbose) {
-            result.getSegmentDetectedList().forEach(detected ->
+            result.getSegmentsDetected().forEach(detected ->
                     LOG.info(detected.toString())
             );
         }

@@ -6,7 +6,7 @@ public class MatchingResult {
 
     private List<SegmentDetected> segmentsDetected = new ArrayList<>();
 
-    public List<SegmentDetected> getSegmentDetectedList() {
+    public List<SegmentDetected> getSegmentsDetected() {
         return segmentsDetected;
     }
 
